@@ -28,8 +28,7 @@
 | **Numero_Empleado**       | numerico entero, tamaño 4       | Not Null                     |
 | Apellido                  | cadena de caracteres, tamaño 15 |                              |
 | Funcion                   | cadena de caracteres, tamaño 10 | Valor por defecto: Enfermero |
-| Turno                     | cadena de caracteres, tamaño 1  | Letra mayuscula: M(Mañana),
-                                                                T(Tarde) o N(Noche)          |
+| Turno                     | cadena de caracteres, tamaño 1  | Letra mayuscula: M(Mañana), T(Tarde) o N(Noche) |
 | Salario                   | numerico entero, tamaño 10      |                              |
 
 ### Tabla OCUPACION
