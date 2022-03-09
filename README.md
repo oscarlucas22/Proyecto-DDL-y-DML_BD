@@ -1,6 +1,6 @@
 # Proyecto_BD
 
-#### Tabla HOSPITAL
+### Tabla HOSPITAL
 
 | HOSPITAL            |                                 |          |
 |---------------------|---------------------------------|----------|
