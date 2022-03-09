@@ -1,6 +1,6 @@
 # Proyecto_BD
 
-2# Tabla HOSPITAL
+## Tabla HOSPITAL
 
 | HOSPITAL            |                                 |          |
 |---------------------|---------------------------------|----------|
@@ -10,7 +10,7 @@
 | Telefono            | cadena de caracteres, tamaño 8  |          |
 | Numero_Cama         | numerico entero, tamaño 3       |          |
 
-# Tabla SALA
+## Tabla SALA
 
 | SALA                     |                                 |          |
 |--------------------------|---------------------------------|----------|
@@ -19,7 +19,7 @@
 | Nombre                   | cadena de caracteres, tamaño 20 |          |
 | Numero_Cama              | numerico entero, tamaño 3       |          |
 
-# Tabla PLANTILLA
+## Tabla PLANTILLA
 
 | PLANTILLA                 |                                 |          |
 |---------------------------|---------------------------------|----------|
@@ -31,7 +31,7 @@
 | Turno                     | cadena de caracteres, tamaño 1  |          |
 | Salario                   | numerico entero, tamaño 10      |          |
 
-# Tabla OCUPACION
+## Tabla OCUPACION
 
 | OCUPACION                |                           |          |
 |--------------------------|---------------------------|----------|
@@ -40,7 +40,7 @@
 | **_Codigo_Sala_**        | numerico entero, tamaño 2 | Not Null |
 | Cama                     | numerico entero, tamaño 4 |          |
 
-# Tabla DOCTOR
+## Tabla DOCTOR
 
 | DOCTOR                |                                 |          |
 |-----------------------|---------------------------------|----------|
@@ -49,7 +49,7 @@
 | Apellido              | cadena de caracteres, tamaño 13 |          |
 | Especialidad          | cadena de caracteres, tamaño 16 |          |
 
-# Tabla ENFERMO
+## Tabla ENFERMO
 
 | ENFERMO               |                                 |          |
 |-----------------------|---------------------------------|----------|
