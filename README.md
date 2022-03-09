@@ -61,7 +61,7 @@
 | Numero_SS             | numerico entero, tamaño 9       | Valor unico     |
 
 
-#### Restricciones 
+#### Modificacion de las tablas
 * Añade una columna llamada Numero_Cama que sea de tipo numerico entero, tamaño 3 a la tabla HOSPITAL
 * Modifica la columna cama de la tabla OCUPACION, diciendole que sea numerico entero, tamaño 1
 * Elimina la columna de Apellido de la tabla ENFERMO
