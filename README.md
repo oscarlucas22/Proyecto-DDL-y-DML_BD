@@ -21,42 +21,44 @@
 
 ### Tabla PLANTILLA
 
-| PLANTILLA                 |                                 |          |
-|---------------------------|---------------------------------|----------|
-| **_Codigo_Hospital_fk2_** | numerico entero, tamaño 2       | Not Null |
-| **_Codigo_Sala_fk_**      | numerico entero, tamaño 2       | Not Null |
-| **Numero_Empleado**       | numerico entero, tamaño 4       | Not Null |
-| Apellido                  | cadena de caracteres, tamaño 15 |          |
-| Funcion                   | cadena de caracteres, tamaño 10 |          |
-| Turno                     | cadena de caracteres, tamaño 1  |          |
-| Salario                   | numerico entero, tamaño 10      |          |
+| PLANTILLA                 |                                 |                              |
+|---------------------------|---------------------------------|------------------------------|
+| **_Codigo_Hospital_fk2_** | numerico entero, tamaño 2       | Not Null                     |
+| **_Codigo_Sala_fk_**      | numerico entero, tamaño 2       | Not Null                     |
+| **Numero_Empleado**       | numerico entero, tamaño 4       | Not Null                     |
+| Apellido                  | cadena de caracteres, tamaño 15 |                              |
+| Funcion                   | cadena de caracteres, tamaño 10 | Valor por defecto: Enfermero |
+| Turno                     | cadena de caracteres, tamaño 1  | Letra mayuscula: M(Mañana),
+                                                                T(Tarde) o N(Noche)          |
+| Salario                   | numerico entero, tamaño 10      |                              |
 
 ### Tabla OCUPACION
 
-| OCUPACION                |                           |          |
-|--------------------------|---------------------------|----------|
-| **Inscripcion**          | numerico entero, tamaño 5 | Not Null |
-| **_Codigo_Hospital_fk_** | numerico entero, tamaño 2 | Not Null |
-| **_Codigo_Sala_**        | numerico entero, tamaño 2 | Not Null |
-| Cama                     | numerico entero, tamaño 4 |          |
+| OCUPACION                |                           |                       |
+|--------------------------|---------------------------|-----------------------|
+| **Inscripcion**          | numerico entero, tamaño 5 | Not Null              |
+| **_Codigo_Hospital_fk_** | numerico entero, tamaño 2 | Not Null              |
+| **_Codigo_Sala_**        | numerico entero, tamaño 2 | Not Null              |
+| Cama                     | numerico entero, tamaño 1 | Numero entre el 1 y 3 |
 
 ### Tabla DOCTOR
 
-| DOCTOR                |                                 |          |
-|-----------------------|---------------------------------|----------|
-| **_Codigo_hospital_** | numerico entero, tamaño 2       | Not Null |
-| **Numero_Doctor**     | numerico entero, tamaño 3       | Not Null |
-| Apellido              | cadena de caracteres, tamaño 13 |          |
-| Especialidad          | cadena de caracteres, tamaño 16 |          |
+| DOCTOR                |                                 |                                     |
+|-----------------------|---------------------------------|-------------------------------------|
+| **_Codigo_hospital_** | numerico entero, tamaño 2       | Not Null                            |
+| **Numero_Doctor**     | numerico entero, tamaño 3       | < 650                               |
+| Apellido              | cadena de caracteres, tamaño 13 |                                     |
+| Especialidad          | cadena de caracteres, tamaño 16 | Solo hay: Cardiología, Ginecología, 
+                                                            Pediatría, Urología o Psiquiatría   |
 
 ### Tabla ENFERMO
 
-| ENFERMO               |                                 |          |
-|-----------------------|---------------------------------|----------|
-| **Nombre_Enfermo**    | cadena de caracteres, tamaño 10 | Not Null |
-|**_Inscripcion_fk_**   | numerico entero, tamaño 5       | Not Null |
-| Apellido              | cadena de caracteres, tamaño 15 |          |
-| Direccion             | cadena de caracteres, tamaño 20 |          |
-| Fecha_Nacimiento      | fecha                           |          |
-| Letra_Sala            | cadena de caracteres, tamaño 1  |          |
-| Numero_SS             | numerico entero, tamaño 9       |          |
+| ENFERMO               |                                 |                 |
+|-----------------------|---------------------------------|-----------------|
+| **Nombre_Enfermo**    | cadena de caracteres, tamaño 10 | Not Null        |
+|**_Inscripcion_fk_**   | numerico entero, tamaño 5       | Not Null        |
+| Apellido              | cadena de caracteres, tamaño 15 |                 |
+| Direccion             | cadena de caracteres, tamaño 20 |                 |
+| Fecha_Nacimiento      | fecha                           |                 |
+| Letra_Sala            | cadena de caracteres, tamaño 1  | Letra mayuscula |
+| Numero_SS             | numerico entero, tamaño 9       | Valor unico     |
