@@ -62,9 +62,9 @@
 
 
 #### Restricciones 
--Añade una columna llamada Numero_Cama que sea de tipo numerico entero, tamaño 3 a la tabla HOSPITAL
--Modifica la columna cama de la tabla OCUPACION, diciendole que sea numerico entero, tamaño 1
--Elimina la columna de apellido de la tabla ENFERMO
--El turno de la plantilla tiene que ser una letra mayuscula M(Mañana), T(Tarde), N(Noche)
--Elimina la restriccion de las camas en la tabla OCUPACION
--Desactiva la restriccion de Numero_Empleado de la tabla PLANTILLA
+*Añade una columna llamada Numero_Cama que sea de tipo numerico entero, tamaño 3 a la tabla HOSPITAL
+*Modifica la columna cama de la tabla OCUPACION, diciendole que sea numerico entero, tamaño 1
+*Elimina la columna de apellido de la tabla ENFERMO
+*El turno de la plantilla tiene que ser una letra mayuscula M(Mañana), T(Tarde), N(Noche)
+*Elimina la restriccion de las camas en la tabla OCUPACION
+*Desactiva la restriccion de Numero_Empleado de la tabla PLANTILLA
