@@ -36,7 +36,7 @@
 |--------------------------|---------------------------|-------------------------|
 | **Inscripcion**          | numerico entero, tamaño 5 | Not Null                |
 | **_Codigo_Hospital_fk_** | numerico entero, tamaño 2 | Not Null                |
-| **_Codigo_Sala_**        | numerico entero, tamaño 2 | Not Null                |
+| **_Codigo_Sala_fk2_**        | numerico entero, tamaño 2 | Not Null                |
 | Cama                     | numerico entero, tamaño 3 | Numero entre el 1 y 100 |
 
 ### Tabla DOCTOR
