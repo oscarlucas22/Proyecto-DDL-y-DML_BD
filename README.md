@@ -11,21 +11,21 @@
 
 ### Tabla PLANTA
 
-| PLANTA                   |                                |          |
-|--------------------------|--------------------------------|----------|
-| **Numero_Planta**        | numerico entero, tamaño 2      | Not Null |
-| **_Codigo_Hospital_fk_** | numerico entero, tamaño 2      | Not Null |
-| Especialidad             | cadena de caracteras,tamaño 20 |          |
+| PLANTA                   |                                |                   |
+|--------------------------|--------------------------------|-------------------|
+| **Numero_Planta**        | numerico entero, tamaño 1      | Valor entre 5 y 8 |
+| **_Codigo_Hospital_fk_** | numerico entero, tamaño 2      | Not Null          |
+| Especialidad             | cadena de caracteras,tamaño 20 |                   |
 
 ### Tabla HABITACION
 
-| HABITACION                |                                 |          |
-|---------------------------|---------------------------------|----------|
-| **_Codigo_Hospital_fk2_** | numerico entero, tamaño 2       | Not Null |
-| **_Numero_Planta_fk_**    | numerico entero, tamaño 2       | Not Null |
-| **Codigo_Habitacion**     | numerico entero, tamaño 2       | Not Null |
-| Nombre                    | cadena de caracteres, tamaño 20 |          |
-| Numero_Cama               | numerico entero, tamaño 3       |          |
+| HABITACION                |                                 |                   |
+|---------------------------|---------------------------------|-------------------|
+| **_Codigo_Hospital_fk2_** | numerico entero, tamaño 2       | Not Null          |
+| **_Numero_Planta_fk_**    | numerico entero, tamaño 2       | Valor entre 5 y 8 |
+| **Codigo_Habitacion**     | numerico entero, tamaño 2       | Not Null          |
+| Nombre                    | cadena de caracteres, tamaño 20 |                   |
+| Numero_Cama               | numerico entero, tamaño 3       |                   |
 
 ### Tabla PLANTILLA
 
