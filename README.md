@@ -22,7 +22,7 @@
 | HABITACION                |                                 |          |
 |---------------------------|---------------------------------|----------|
 | **_Codigo_Hospital_fk2_** | numerico entero, tamaño 2       | Not Null |
-| **_Codigo_Planta_**       | numerico entero, tamaño 2       | Not Null |
+| **_Codigo_Planta_fk_**       | numerico entero, tamaño 2       | Not Null |
 | **Codigo_Habitacion**     | numerico entero, tamaño 2       | Not Null |
 | Nombre                    | cadena de caracteres, tamaño 20 |          |
 | Numero_Cama               | numerico entero, tamaño 3       |          |
