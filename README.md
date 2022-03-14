@@ -10,11 +10,11 @@
 
 ### Tabla PLANTA
 
-| PLANTA                   |                                 |                   |
-|--------------------------|---------------------------------|-------------------|
-| **Numero_Planta**        | numerico entero, tamaño 2       | Valor entre 2 y 8 |
-| **_Nombre_Hospital_fk_** | cadena de caracteres, tamaño 10 | Not Null          |
-| Especialidad             | cadena de caracteras,tamaño 20  |                   |
+| PLANTA                   |                                 |          |
+|--------------------------|---------------------------------|----------|
+| **Numero_Planta**        | numerico entero, tamaño 2       | <= 5     |
+| **_Nombre_Hospital_fk_** | cadena de caracteres, tamaño 10 | Not Null |
+| Especialidad             | cadena de caracteras,tamaño 20  |          |
 
 ### Tabla HABITACION
 
