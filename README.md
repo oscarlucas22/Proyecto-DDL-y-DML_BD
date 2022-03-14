@@ -43,7 +43,6 @@
 |---------------------------|---------------------------------|-----------------------------------------------------------------------|
 | **_Codigo_Hospital_fk4_** | numerico entero, tamaño 2       | Not Null                                                              |
 | **Numero_Doctor**         | numerico entero, tamaño 3       | < 650                                                                 |
-| Apellido                  | cadena de caracteres, tamaño 13 |                                                                       |
 | Especialidad              | cadena de caracteres, tamaño 16 | Solo hay: Cardiología, Ginecología, Pediatría, Urología o Psiquiatría |
 
 ### Tabla ENFERMO
