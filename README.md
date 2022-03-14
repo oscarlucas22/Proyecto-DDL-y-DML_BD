@@ -33,7 +33,6 @@
 | **_Codigo_Hospital_fk3_**  | numerico entero, tamaño 2       | Not Null                     |
 | **_Numero_Planta_fk2_**    | numerico entero, tamaño 2       | Valor entre 2 y 8            |
 | **Numero_Empleado**        | numerico entero, tamaño 4       | Valor entre 1000 y 9950      |
-| Apellido                   | cadena de caracteres, tamaño 15 |                              |
 | Funcion                    | cadena de caracteres, tamaño 10 | Valor por defecto: Enfermero |
 | Turno                      | cadena de caracteres, tamaño 1  |                              |
 | Salario                    | numerico entero, tamaño 10      |                              |
