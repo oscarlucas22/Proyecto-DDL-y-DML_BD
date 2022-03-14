@@ -24,7 +24,6 @@
 | **_Codigo_Hospital_fk2_** | numerico entero, tamaño 2       | Not Null          |
 | **_Numero_Planta_fk_**    | numerico entero, tamaño 2       | Valor entre 2 y 8 |
 | **Codigo_Habitacion**     | numerico entero, tamaño 3       | Not Null          |
-| Nombre                    | cadena de caracteres, tamaño 20 |                   |
 | Numero_Cama               | numerico entero, tamaño 3       |                   |
 
 ### Tabla PLANTILLA
