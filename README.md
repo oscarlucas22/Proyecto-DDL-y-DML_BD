@@ -18,12 +18,11 @@
 
 ### Tabla HABITACION
 
-| HABITACION                |                                 |                   |
-|---------------------------|---------------------------------|-------------------|
-| **_Nombre_Hospital_fk2_** | cadena de caracteres, tamaño 10 | Not Null          |
-| **_Numero_Planta_fk_**    | numerico entero, tamaño 2       | Valor entre 2 y 8 |
-| **Codigo_Habitacion**     | numerico entero, tamaño 3       | Not Null          |
-| Numero_Cama               | numerico entero, tamaño 3       |                   |
+| HABITACION                |                                 |                                                                        |
+|---------------------------|---------------------------------|------------------------------------------------------------------------|
+| **_Nombre_Hospital_fk2_** | cadena de caracteres, tamaño 10 | Not Null                                                               |
+| **Codigo_Habitacion**     | cadena de caracteres, tamaño 2  | Debe estar constituido de el numero de la planta y una letra mayuscula |
+| Numero_Cama               | numerico entero, tamaño 3       |                                                                        |
 
 ### Tabla EMPLEADO
 
