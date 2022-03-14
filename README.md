@@ -54,7 +54,6 @@
 |---------------------------|---------------------------------|-----------------|
 | **Numero_SS**             | numerico entero, tamaño 9       | Valor unico     |
 | **_Codigo_Hospital_fk5_** | numerico entero, tamaño 5       | Not Null        |
-| Apellido                  | cadena de caracteres, tamaño 15 |                 |
 | Direccion                 | cadena de caracteres, tamaño 20 |                 |
 | Fecha_Nacimiento          | fecha                           |                 |
 | Fecha_Ingreso             | fecha                           |                 |
