@@ -58,7 +58,7 @@
 | Fecha_Alta                  | fecha                           | Not Null        |
 
 
-#### Añade las siguientes restricciones una vez crees las tablas
+#### Añade las siguientes restricciones una vez crees las tablas:
 * Añade una columna llamada Numero_Cama que sea de tipo numerico entero, tamaño 3 a la tabla HOSPITAL
 * Modifica la columna Numero_Empleado y pon una restriccion que el valor este entre el 1000 y 10000
 * Elimina la columna de Apellido de la tabla ENFERMO
