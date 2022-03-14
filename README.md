@@ -49,14 +49,15 @@
 
 ### Tabla ENFERMO
 
-| ENFERMO                   |                                 |                 |
-|---------------------------|---------------------------------|-----------------|
-| **Numero_SS**             | numerico entero, tamaño 9       | Valor unico     |
-| **_Codigo_Hospital_fk5_** | numerico entero, tamaño 5       | Not Null        |
-| Direccion                 | cadena de caracteres, tamaño 20 |                 |
-| Fecha_Nacimiento          | fecha                           |                 |
-| Fecha_Ingreso             | fecha                           | Not Null        |
-| Fecha_Alta                | fecha                           | Not Null        |
+| ENFERMO                     |                                 |                 |
+|-----------------------------|---------------------------------|-----------------|
+| **Numero_SS**               | numerico entero, tamaño 9       | Valor unico     |
+| **_Codigo_Hospital_fk5_**   | numerico entero, tamaño 5       | Not Null        |
+| **_Codigo_Habitacion_fk2_** | numerico entero, tamaño 3       | Not Null        |
+| Direccion                   | cadena de caracteres, tamaño 20 |                 |
+| Fecha_Nacimiento            | fecha                           |                 |
+| Fecha_Ingreso               | fecha                           | Not Null        |
+| Fecha_Alta                  | fecha                           | Not Null        |
 
 
 #### Añade las siguientes restricciones una vez crees las tablas
