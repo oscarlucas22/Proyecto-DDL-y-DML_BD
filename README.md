@@ -56,8 +56,8 @@
 | **_Codigo_Hospital_fk5_** | numerico entero, tamaño 5       | Not Null        |
 | Direccion                 | cadena de caracteres, tamaño 20 |                 |
 | Fecha_Nacimiento          | fecha                           |                 |
-| Fecha_Ingreso             | fecha                           |                 |
-| Fecha_Alta                | fecha                           |                 |
+| Fecha_Ingreso             | fecha                           | Not Null        |
+| Fecha_Alta                | fecha                           | Not Null        |
 
 
 #### Añade las siguientes restricciones una vez crees las tablas
