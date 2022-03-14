@@ -13,7 +13,7 @@
 
 | PLANTA                   |                                |                   |
 |--------------------------|--------------------------------|-------------------|
-| **Numero_Planta**        | numerico entero, tamaño 1      | Valor entre 5 y 8 |
+| **Numero_Planta**        | numerico entero, tamaño 2      | Valor entre 2 y 8 |
 | **_Codigo_Hospital_fk_** | numerico entero, tamaño 2      | Not Null          |
 | Especialidad             | cadena de caracteras,tamaño 20 |                   |
 
@@ -22,7 +22,7 @@
 | HABITACION                |                                 |                   |
 |---------------------------|---------------------------------|-------------------|
 | **_Codigo_Hospital_fk2_** | numerico entero, tamaño 2       | Not Null          |
-| **_Numero_Planta_fk_**    | numerico entero, tamaño 2       | Valor entre 5 y 8 |
+| **_Numero_Planta_fk_**    | numerico entero, tamaño 2       | Valor entre 2 y 8 |
 | **Codigo_Habitacion**     | numerico entero, tamaño 2       | Not Null          |
 | Nombre                    | cadena de caracteres, tamaño 20 |                   |
 | Numero_Cama               | numerico entero, tamaño 3       |                   |
@@ -32,7 +32,7 @@
 | PLANTILLA                  |                                 |                              |
 |----------------------------|---------------------------------|------------------------------|
 | **_Codigo_Hospital_fk3_**  | numerico entero, tamaño 2       | Not Null                     |
-| **_Codigo_Habitacion_fk_** | numerico entero, tamaño 2       | Not Null                     |
+| **_Numero_Planta_fk2_**    | numerico entero, tamaño 2       | Valor entre 2 y 8            |
 | **Numero_Empleado**        | numerico entero, tamaño 4       | Valor entre 1000 y 9950      |
 | Apellido                   | cadena de caracteres, tamaño 15 |                              |
 | Funcion                    | cadena de caracteres, tamaño 10 | Valor por defecto: Enfermero |
@@ -52,13 +52,13 @@
 
 | ENFERMO                   |                                 |                 |
 |---------------------------|---------------------------------|-----------------|
-| **Nombre_Enfermo**        | cadena de caracteres, tamaño 10 | Not Null        |
+| **Numero_SS**             | numerico entero, tamaño 9       | Valor unico     |
 | **_Codigo_Hospital_fk5_** | numerico entero, tamaño 5       | Not Null        |
 | Apellido                  | cadena de caracteres, tamaño 15 |                 |
 | Direccion                 | cadena de caracteres, tamaño 20 |                 |
 | Fecha_Nacimiento          | fecha                           |                 |
-| Letra_Sala                | cadena de caracteres, tamaño 1  | Letra mayuscula |
-| Numero_SS                 | numerico entero, tamaño 9       | Valor unico     |
+| Fecha_Ingreso             | fecha                           |                 |
+| Fecha_Alta                | fecha                           |                 |
 
 
 #### Añade las siguientes restricciones una vez crees las tablas
