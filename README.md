@@ -30,7 +30,7 @@
 |---------------------------|---------------------------------|--------------------------------------------|
 | **DNI_Empleado**          | cadena de caracteres, tamaño 9  | El ultimo caracter tiene que ser una letra |
 | **_Nombre_Hospital_fk3_** | cadena de caracteres, tamaño 10 | Not Null                                   |
-| **_Numero_Doctor_fk_**    | numerico entero, tamaño 3       | <= 985                                     |
+| _Numero_Doctor_fk_        | numerico entero, tamaño 3       | <= 985 o ""                                |
 | Funcion                   | cadena de caracteres, tamaño 10 | Valor por defecto: Enfermero               |
 | Turno                     | cadena de caracteres, tamaño 1  |                                            |
 | Salario                   | numerico entero, tamaño 10      | <= 1400                                    |
@@ -50,6 +50,7 @@
 | **Numero_SS**               | numerico entero, tamaño 9       | Valor unico     |
 | **_Nombre_Hospital_fk4_**   | cadena de caracteres, tamaño 10 | Not Null        |
 | **_Codigo_Habitacion_fk2_** | numerico entero, tamaño 3       | Not Null        |
+| **_Numero_Doctor_fk2_**     | numerico entero, tamaño 3       | <= 985          |
 | Apellido                    | cadena de caracteres, tamaño 20 |                 |
 | Direccion                   | cadena de caracteres, tamaño 20 |                 |
 | Fecha_Nacimiento            | fecha                           |                 |
