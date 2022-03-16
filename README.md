@@ -12,7 +12,7 @@
 
 | PLANTA                   |                                 |          |
 |--------------------------|---------------------------------|----------|
-| **Numero_Planta**        | numerico entero, tamaño 2       | <= 5     |
+| **Numero_Planta**        | numerico entero, tamaño 2       | <= 8     |
 | **_Nombre_Hospital_fk_** | cadena de caracteres, tamaño 10 | Not Null |
 | Especialidad             | cadena de caracteras,tamaño 20  |          |
 
@@ -21,7 +21,7 @@
 | HABITACION                |                                 |                                                                               |
 |---------------------------|---------------------------------|-------------------------------------------------------------------------------|
 | **_Nombre_Hospital_fk2_** | cadena de caracteres, tamaño 10 | Not Null                                                                      |
-| **Codigo_Habitacion**     | cadena de caracteres, tamaño 2  | Debe estar constituido de el numero de la planta (<= 5) y una letra mayuscula |
+| **Codigo_Habitacion**     | cadena de caracteres, tamaño 2  | Debe estar constituido de el numero de la planta y un numero de la habitacion |
 | Numero_Cama               | numerico entero, tamaño 3       |                                                                               |
 
 ### Tabla EMPLEADO
@@ -30,7 +30,6 @@
 |---------------------------|---------------------------------|--------------------------------------------|
 | **DNI_Empleado**          | cadena de caracteres, tamaño 9  | El ultimo caracter tiene que ser una letra |
 | **_Nombre_Hospital_fk3_** | cadena de caracteres, tamaño 10 | Not Null                                   |
-| _Numero_Doctor_fk_        | numerico entero, tamaño 3       | <= 985 o ""                                |
 | Funcion                   | cadena de caracteres, tamaño 10 | Valor por defecto: Enfermero               |
 | Turno                     | cadena de caracteres, tamaño 1  |                                            |
 | Salario                   | numerico entero, tamaño 10      | <= 1400                                    |
@@ -54,7 +53,7 @@
 | Apellido                    | cadena de caracteres, tamaño 20 |                 |
 | Direccion                   | cadena de caracteres, tamaño 20 |                 |
 | Fecha_Nacimiento            | fecha                           |                 |
-| Fecha_Ingreso               | fecha                           | Not Null        |
+| **Fecha_Ingreso**           | fecha                           | Not Null        |
 | Fecha_Alta                  | fecha                           | Not Null        |
 
 
