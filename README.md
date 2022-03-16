@@ -2,11 +2,11 @@
 
 ### Tabla HOSPITAL
 
-| HOSPITAL            |                                 |                                                                              |
-|---------------------|---------------------------------|------------------------------------------------------------------------------|
-| **Nombre_Hospital** | cadena de caracteres, tamaño 10 | Not Null                                                                     |
-| Direccion           | cadena de caracteres, tamaño 20 |                                                                              |
-| Telefono            | cadena de caracteres, tamaño 8  | Tienen que ser todo numeros y tener un guion entre el tercer y cuarto numero |
+| HOSPITAL            |                                 |          |
+|---------------------|---------------------------------|----------|
+| **Nombre_Hospital** | cadena de caracteres, tamaño 10 | Not Null |
+| Direccion           | cadena de caracteres, tamaño 20 |          |
+| Telefono            | cadena de caracteres, tamaño 9  |          |
 
 ### Tabla PLANTA
 
