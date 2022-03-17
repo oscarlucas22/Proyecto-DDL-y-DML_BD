@@ -44,17 +44,17 @@
 
 ### Tabla ENFERMO
 
-| ENFERMO                     |                                 |                 |
-|-----------------------------|---------------------------------|-----------------|
-| **Numero_SS**               | numerico entero, tamaño 9       | Valor unico     |
-| **_Nombre_Hospital_fk4_**   | cadena de caracteres, tamaño 10 | Not Null        |
-| **_Codigo_Habitacion_fk2_** | numerico entero, tamaño 3       | Not Null        |
-| **_Numero_Doctor_fk2_**     | numerico entero, tamaño 3       | <= 985          |
-| Apellido                    | cadena de caracteres, tamaño 20 |                 |
-| Direccion                   | cadena de caracteres, tamaño 20 |                 |
-| Fecha_Nacimiento            | fecha                           |                 |
-| **Fecha_Ingreso**           | fecha                           | Not Null        |
-| Fecha_Alta                  | fecha                           | Not Null        |
+| ENFERMO                     |                                 |                                                              |
+|-----------------------------|---------------------------------|--------------------------------------------------------------|
+| **Numero_SS**               | numerico entero, tamaño 9       | Valor unico                                                  |
+| **_Nombre_Hospital_fk4_**   | cadena de caracteres, tamaño 10 | Not Null                                                     |
+| **_Codigo_Habitacion_fk2_** | numerico entero, tamaño 3       | Not Null                                                     |
+| **_Numero_Doctor_fk2_**     | numerico entero, tamaño 3       | <= 985                                                       |
+| Apellido                    | cadena de caracteres, tamaño 20 |                                                              |
+| Direccion                   | cadena de caracteres, tamaño 20 |                                                              |
+| Fecha_Nacimiento            | fecha                           |                                                              |
+| **Fecha_Ingreso**           | fecha                           | Not Null                                                     |
+| Fecha_Alta                  | fecha                           | la fecha de alta debe de ser posterior a la fecha de ingreso |
 
 
 #### Añade las siguientes restricciones una vez crees las tablas:
