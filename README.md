@@ -26,21 +26,21 @@
 
 ### Tabla EMPLEADO
 
-| EMPLEADO                  |                                 |                                            |
-|---------------------------|---------------------------------|--------------------------------------------|
-| **DNI_Empleado**          | cadena de caracteres, tamaño 9  | El ultimo caracter tiene que ser una letra |
-| **_Nombre_Hospital_fk3_** | cadena de caracteres, tamaño 10 | Not Null                                   |
-| Funcion                   | cadena de caracteres, tamaño 10 | Valor por defecto: Enfermero               |
-| Turno                     | cadena de caracteres, tamaño 1  |                                            |
-| Salario                   | numerico entero, tamaño 10      | <= 1400                                    |
+| EMPLEADO                  |                                 |                                                                           |
+|---------------------------|---------------------------------|---------------------------------------------------------------------------|
+| **DNI_Empleado**          | cadena de caracteres, tamaño 9  | El ultimo caracter tiene que ser una letra y tiene que ser un valor unico |
+| **_Nombre_Hospital_fk3_** | cadena de caracteres, tamaño 10 | Not Null                                                                  |
+| Funcion                   | cadena de caracteres, tamaño 10 | Valor por defecto: Enfermero                                              |
+| Turno                     | cadena de caracteres, tamaño 1  |                                                                           |
+| Salario                   | numerico entero, tamaño 10      | <= 1400                                                                   |
 
 ### Tabla DOCTOR
 
-| DOCTOR                 |                                 |                                                                       |
-|------------------------|---------------------------------|-----------------------------------------------------------------------|
-| **Numero_Doctor**      | numerico entero, tamaño 3       | <= 985                                                                |
-| **_DNI_Empleado_fk_**  |                                 | Not Null                                                              |
-| Especialidad           | cadena de caracteres, tamaño 16 | Solo hay: Cardiología, Ginecología, Pediatría, Urología o Psiquiatría |
+| DOCTOR                 |                                 |                                                                           |
+|------------------------|---------------------------------|---------------------------------------------------------------------------|
+| **Numero_Doctor**      | numerico entero, tamaño 3       | <= 985                                                                    |
+| **_DNI_Empleado_fk_**  |                                 | El ultimo caracter tiene que ser una letra y tiene que ser un valor unico |
+| Especialidad           | cadena de caracteres, tamaño 16 | Solo hay: Cardiología, Ginecología, Pediatría, Urología o Psiquiatría     |
 
 ### Tabla ENFERMO
 
