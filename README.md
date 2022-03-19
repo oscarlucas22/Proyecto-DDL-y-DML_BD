@@ -44,23 +44,26 @@
 
 ### Tabla ENFERMO
 
-| ENFERMO                     |                                 |                                                              |
-|-----------------------------|---------------------------------|--------------------------------------------------------------|
-| **Numero_SS**               | numerico entero, tamaño 9       | Valor unico                                                  |
-| **_Nombre_Hospital_fk4_**   | cadena de caracteres, tamaño 10 | Valor unico                                                  |
-| **_Codigo_Habitacion_fk2_** | numerico entero, tamaño 3       | Not Null                                                     |
-| **_Numero_Doctor_fk2_**     | numerico entero, tamaño 3       | <= 985                                                       |
-| Apellido                    | cadena de caracteres, tamaño 20 |                                                              |
-| Direccion                   | cadena de caracteres, tamaño 20 |                                                              |
-| Fecha_Nacimiento            | fecha                           |                                                              |
-| **Fecha_Ingreso**           | fecha                           | Not Null                                                     |
-| Fecha_Alta                  | fecha                           | la fecha de alta debe de ser posterior a la fecha de ingreso |
+| ENFERMO                     |                                 |             |
+|-----------------------------|---------------------------------|-------------|
+| **Numero_SS**               | numerico entero, tamaño 9       | Valor unico |
+| **_Nombre_Hospital_fk4_**   | cadena de caracteres, tamaño 10 | Valor unico |
+| **_Codigo_Habitacion_fk2_** | numerico entero, tamaño 3       | Not Null    |
+| **_Numero_Doctor_fk2_**     | numerico entero, tamaño 3       | <= 985      |
+| Apellido                    | cadena de caracteres, tamaño 20 |             |
+| Direccion                   | cadena de caracteres, tamaño 20 |             |
+| Sexo                        | cadena de caracteres, tamaño 1  |             |
+| **Fecha_Ingreso**           | fecha                           | Not Null    |
+| Fecha_Alta                  | fecha                           |             |
 
 
 #### Añade las siguientes restricciones una vez crees las tablas:
 * Añade una columna llamada Numero_Cama que sea de tipo numerico entero, tamaño 3 a la tabla HOSPITAL
+* Añade una columna llamada Fecha_Nacimiento que sea de tipo fecha
 * Modifica la columna Numero_Empleado y pon una restriccion que el valor este entre el 1000 y 10000
+* Modifica la columna de Fecha_Alta y pon una restriccion que la fecha de alta debe serposterior a la fecha de ingreso
+* Modifica el Turno de la tabla EMPLEADOS y pon una restriccion que tiene que ser una letra mayuscula M(Mañana), T(Tarde), N(Noche)
 * Elimina la columna de Apellido de la tabla ENFERMO
-* El turno de los empleados tiene que ser una letra mayuscula M(Mañana), T(Tarde), N(Noche)
+* Elimina la columna de Sexo de la tabla de ENFERMO
 * Elimina la restriccion del Salario en la tabla EMPLEADO
 * Desactiva la restriccion de Telefono de la tabla HOSPITAL
