@@ -4,7 +4,7 @@
 
 | HOSPITAL            |                                 |                                                                        |
 |---------------------|---------------------------------|------------------------------------------------------------------------|
-| **Nombre_Hospital** | cadena de caracteres, tamaño 10 | Valor unico                                                            |
+| **Nombre_Hospital** | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula                |
 | Direccion           | cadena de caracteres, tamaño 20 |                                                                        |
 | Telefono            | cadena de caracteres, tamaño 9  | los telefonos deben de ser fijos por lo tanto tienen que empezar por 9 |
 
@@ -20,7 +20,7 @@
 
 | HABITACION                |                                 |                                                                               |
 |---------------------------|---------------------------------|-------------------------------------------------------------------------------|
-| **_Nombre_Hospital_fk2_** | cadena de caracteres, tamaño 10 | Valor unico                                                                   |
+| **_Nombre_Hospital_fk2_** | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula                       |
 | **Codigo_Habitacion**     | cadena de caracteres, tamaño 2  | Debe estar constituido de el numero de la planta y un numero de la habitacion |
 | Numero_Cama               | numerico entero, tamaño 3       | < 300                                                                         |
 
@@ -29,7 +29,7 @@
 | EMPLEADO                  |                                 |                                                                           |
 |---------------------------|---------------------------------|---------------------------------------------------------------------------|
 | **DNI_Empleado**          | cadena de caracteres, tamaño 9  | El ultimo caracter tiene que ser una letra y tiene que ser un valor unico |
-| **_Nombre_Hospital_fk3_** | cadena de caracteres, tamaño 10 | Valor unico                                                               |
+| **_Nombre_Hospital_fk3_** | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula                   |
 | Funcion                   | cadena de caracteres, tamaño 10 | Valor por defecto: Enfermero                                              |
 | Turno                     | cadena de caracteres, tamaño 1  |                                                                           |
 | Salario                   | numerico entero, tamaño 10      | <= 1400                                                                   |
@@ -47,7 +47,7 @@
 | ENFERMO                     |                                 |                                                                |
 |-----------------------------|---------------------------------|----------------------------------------------------------------|
 | **Numero_SS**               | numerico entero, tamaño 9       | Valor unico                                                    |
-| **_Nombre_Hospital_fk4_**   | cadena de caracteres, tamaño 10 | Valor unico                                                    |
+| **_Nombre_Hospital_fk4_**   | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula        |
 | **_Codigo_Habitacion_fk2_** | numerico entero, tamaño 3       | Not Null                                                       |
 | **_Numero_Doctor_fk2_**     | numerico entero, tamaño 3       | <= 985                                                         |
 | Apellido                    | cadena de caracteres, tamaño 20 |                                                                |
