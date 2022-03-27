@@ -21,7 +21,7 @@
 | HABITACION                |                                 |                                                                               |
 |---------------------------|---------------------------------|-------------------------------------------------------------------------------|
 | **_Nombre_Hospital_fk2_** | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula                       |
-| **Codigo_Habitacion**     | cadena de caracteres, tamaño 2  | Debe estar constituido de el numero de la planta y un numero de la habitacion |
+| **Codigo_Habitacion**     | cadena de caracteres, tamaño 3  | Debe estar constituido de el numero de la planta y un numero de la habitacion |
 | Numero_Cama               | numerico entero, tamaño 3       | < 300                                                                         |
 
 ### Tabla EMPLEADO
