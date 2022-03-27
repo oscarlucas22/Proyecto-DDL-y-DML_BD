@@ -39,7 +39,7 @@
 | DOCTOR                 |                                 |                                                                           |
 |------------------------|---------------------------------|---------------------------------------------------------------------------|
 | **Numero_Doctor**      | numerico entero, tamaño 3       | <= 985                                                                    |
-| **_DNI_Empleado_fk_**  |                                 | El ultimo caracter tiene que ser una letra y tiene que ser un valor unico |
+| **_DNI_Empleado_fk_**  | cadena de caracteres, tamaño 9  | El ultimo caracter tiene que ser una letra y tiene que ser un valor unico |
 | Especialidad           | cadena de caracteres, tamaño 16 | Solo hay: Cardiología, Ginecología, Pediatría, Urología o Psiquiatría     |
 
 ### Tabla ENFERMO
