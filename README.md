@@ -48,8 +48,8 @@
 |-----------------------------|---------------------------------|----------------------------------------------------------------|
 | **Numero_SS**               | numerico entero, tamaño 9       | Valor unico                                                    |
 | **_Nombre_Hospital_fk4_**   | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula        |
-| **_Codigo_Habitacion_fk_** | numerico entero, tamaño 3       | Not Null                                                       |
-| **_Numero_Doctor_fk_**     | numerico entero, tamaño 3       | <= 985                                                         |
+| **_Codigo_Habitacion_fk_**  | cadena de caracteres, tamaño 3  | Not Null                                                       |
+| **_Numero_Doctor_fk_**      | numerico entero, tamaño 3       | <= 985                                                         |
 | Apellido                    | cadena de caracteres, tamaño 20 |                                                                |
 | Direccion                   | cadena de caracteres, tamaño 20 |                                                                |
 | Sexo                        | cadena de caracteres, tamaño 1  | Tiene que tener una letra mayuscula M(masculino) y F(femenino) |
