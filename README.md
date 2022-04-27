@@ -67,3 +67,40 @@
 * Elimina la columna de Sexo de la tabla de ENFERMO
 * Elimina la restriccion del Salario en la tabla EMPLEADO
 * Desactiva la restriccion de Telefono de la tabla HOSPITAL
+
+
+### Consultas
+* Consulta sencilla
+    * Obtener el nombre del hospital cuya planta sea de la especialidad de Pediatria
+    * Obtener los dni de los empleados que son cirujanos
+ 
+ * Vistas
+    * Crea una vista para registrar el acceso a los hospitales en los que el numero del doctor es 453
+    
+* Subconsultas
+    * Obten el numero del doctor cuyo turno sea de noche
+    
+* Combinaciones de tablas
+    * Consulta el numero de la SS de los enfermos que esten en el hospital de la direccion Ciudad Universitaria
+    * Muestra el DNI y el turno de los empleados que sean doctores y tengan como especialidad pediatria
+
+* Insercion de registros. Colsultas de datos anexados
+    * Crea una tabla llamada codigos
+    
+* Modificación de registros. Consultas de actualización.
+    * Haz que los cirujanos cobren el doble que los internos
+
+* Borrado de registros. Consultas de eliminación.
+    * Crea una tabla en la que guarde DNI de empleado, Funcion, Salario y la Especialidad de los doctores y haz una consulta que borre los salarios de los doctores que sean cardiologos
+
+* Group by y having
+    * Mostrar los hospitales y el codigo de habitacion que tienen mas de 25 numero de camas en las habitaciones
+   
+* Outer joins. Combinaciones externas.
+  * 
+
+* Consultas con operadores de conjuntos.
+  * 
+
+* Subconsultas correlacionadas.
+    * Mostrar los DNI de los empleados cuyo salario sea mayores al salario de los doctores
