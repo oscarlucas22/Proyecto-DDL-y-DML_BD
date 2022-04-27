@@ -97,10 +97,11 @@
     * Mostrar los hospitales y el codigo de habitacion que tienen mas de 25 numero de camas en las habitaciones
    
 * Outer joins. Combinaciones externas.
-  * 
+      * Muestra todos los nombres de los hospitales y en otra tabla a la izquierda sus correspondientes plantas
+      * Muestra la fecha de alta de los enfermos y en otra tabla a la derecha el numero de doctor que le ha atendido  
 
 * Consultas con operadores de conjuntos.
-  * 
+      * Haz una consulta mostrando el numero de la SS de los enfermos y los dni de los empleados que son doctores y unelas
 
 * Subconsultas correlacionadas.
     * Mostrar los DNI de los empleados cuyo salario sea mayores al salario de los doctores
