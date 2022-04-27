@@ -85,7 +85,7 @@
     * Muestra el DNI y el turno de los empleados que sean doctores y tengan como especialidad pediatria
 
 * Insercion de registros. Colsultas de datos anexados
-    * Inserta un nuevo empleado que tenga como dni 114-0 y los datos restantes seran igual que el empleado con dni 116-N
+    * Inserta un nuevo empleado que tenga como dni 114-O y los datos restantes seran igual que el empleado con dni 116-N
     * Inserta un nuevo doctor que tenga como numero 202, como dni 114-O y de especialidad igual que el numero de doctor correspondiente al 398
     
 * Modificación de registros. Consultas de actualización.
