@@ -53,7 +53,7 @@
 | Apellido                    | cadena de caracteres, tamaño 20 |                                                                |
 | Direccion                   | cadena de caracteres, tamaño 20 |                                                                |
 | Sexo                        | cadena de caracteres, tamaño 1  | Tiene que tener una letra mayuscula M(masculino) y F(femenino) |
-| **Fecha_Ingreso**           | fecha                           | Not Null                                                       |
+| Fecha_Ingreso               | fecha                           | Not Null                                                       |
 | Fecha_Alta                  | fecha                           |                                                                |
 
 
