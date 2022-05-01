@@ -65,7 +65,7 @@
 * Modifica el Turno de la tabla EMPLEADOS y pon una restriccion que tiene que ser una letra mayuscula M(Mañana), T(Tarde), N(Noche)
 * Elimina la columna de Apellido de la tabla ENFERMO
 * Elimina la columna de Sexo de la tabla de ENFERMO
-* Desactiva la restriccion de Telefono de la tabla HOSPITAL
+* Desactiva temporalmente la restriccion de Telefono de la tabla HOSPITAL
 * Modifica la columna Salario de la tabla EMPLEADO y pon una restriccion de <=5000
 
 
