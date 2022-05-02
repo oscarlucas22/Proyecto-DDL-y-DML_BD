@@ -96,6 +96,7 @@
 
 * Group by y having
     * Mostrar los hospitales y el codigo de habitacion que tienen mas de 25 numero de camas en las habitaciones
+    * Mostrar el nombre, el año de la fecha de alta (solo el año) y el numero del doctor de los enfermos que ha antendido el doctor correspondiente al numero 607
    
 * Outer joins. Combinaciones externas.
     * Muestra todos los nombres de los hospitales y en otra tabla a la izquierda sus correspondientes plantas
