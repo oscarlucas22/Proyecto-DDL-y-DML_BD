@@ -73,12 +73,30 @@ create table ENFERMO (
     constraint ND_fk foreign key (Numero_Doctor_fk) references DOCTOR(Numero_Doctor)
 );
 
+--1--
 alter table HOSPITAL add column Numero_Cama_Hospital integer;
-alter table HOSPITAL drop constraint tlf_1;
-alter table EMPLEADO add constraint salario_1 check (Salario <= 1800);
-alter table EMPLEADO add constraint T_1 check(Turno = 'M' or Turno = 'T' or Turno = 'N');
-alter table EMPLEADO drop constraint S_1;
+
+--2--
 alter table ENFERMO add column Nombre varchar(20);
+
+--3--
+alter table EMPLEADO drop constraint S_1;
+
+--4--
 alter table ENFERMO add constraint FA_1 check(Fecha_Alta > Fecha_Ingreso);
+
+--5--
+alter table EMPLEADO add constraint T_1 check(Turno = 'M' or Turno = 'T' or Turno = 'N');
+
+--6--
 alter table ENFERMO drop column Apellido;
+
+--7--
 alter table ENFERMO drop column Sexo;
+
+--8--
+alter table HOSPITAL drop constraint tlf_1;
+
+--9--
+alter table EMPLEADO add constraint salario_1 check (Salario <= 5000);
+
