@@ -102,7 +102,8 @@
     * Muestra la fecha de alta de los enfermos y en otra tabla a la derecha el numero de doctor que le ha atendido  
 
 * Consultas con operadores de conjuntos.
-    * Haz una consulta mostrando el numero de la SS de los enfermos y los dni de los empleados que son doctores y unelas
+    * Haz una consulta mostrando el numero de la SS de los enfermos Hospitalizados en el hospital  General y los dni de los empleados que son doctores que trabajan en el hospital General y unelas
+    * Muestras los dni que son identicos en las tablas EMPLEADO y DOCTOR
 
 * Subconsultas correlacionadas.
     * Mostrar los DNI de los empleados cuyo salario sea mayores al salario de los doctores
