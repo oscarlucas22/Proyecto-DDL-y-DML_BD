@@ -10,51 +10,51 @@
 
 ### Tabla PLANTA
 
-| PLANTA                   |                                 |                                                                       |
-|--------------------------|---------------------------------|-----------------------------------------------------------------------|
-| **Numero_Planta**        | numerico entero, tamaño 2       | <= 8                                                                  |
-| **_Nombre_Hospital_fk_** | cadena de caracteres, tamaño 10 | Valor unico                                                           |
-| Especialidad             | cadena de caracteras,tamaño 20  | Solo hay: Cardiología, Ginecología, Pediatría, Urología o Psiquiatría |
+| PLANTA                |                                 |                                                                       |
+|-----------------------|---------------------------------|-----------------------------------------------------------------------|
+| **Numero_Planta**     | numerico entero, tamaño 2       | <= 8                                                                  |
+| **_Nombre_Hospital_** | cadena de caracteres, tamaño 10 | Valor unico                                                           |
+| Especialidad          | cadena de caracteras,tamaño 20  | Solo hay: Cardiología, Ginecología, Pediatría, Urología o Psiquiatría |
 
 ### Tabla HABITACION
 
-| HABITACION                |                                 |                                                                               |
-|---------------------------|---------------------------------|-------------------------------------------------------------------------------|
-| **_Nombre_Hospital_fk2_** | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula                       |
-| **Codigo_Habitacion**     | cadena de caracteres, tamaño 3  | Debe estar constituido de el numero de la planta y un numero de la habitacion |
-| Numero_Cama               | numerico entero, tamaño 3       | < 300                                                                         |
+| HABITACION             |                                 |                                                                               |
+|------------------------|---------------------------------|-------------------------------------------------------------------------------|
+| **_Nombre_Hospital**   | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula                       |
+| **Codigo_Habitacion**  | cadena de caracteres, tamaño 3  | Debe estar constituido de el numero de la planta y un numero de la habitacion |
+| Numero_Cama            | numerico entero, tamaño 3       | < 300                                                                         |
 
 ### Tabla EMPLEADO
 
-| EMPLEADO                  |                                 |                                                                           |
-|---------------------------|---------------------------------|---------------------------------------------------------------------------|
-| **DNI_Empleado**          | cadena de caracteres, tamaño 9  | El ultimo caracter tiene que ser una letra y tiene que ser un valor unico |
-| **_Nombre_Hospital_fk3_** | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula                   |
-| Funcion                   | cadena de caracteres, tamaño 10 | Valor por defecto: Enfermero                                              |
-| Turno                     | cadena de caracteres, tamaño 1  |                                                                           |
-| Salario                   | numerico entero, tamaño 10      | <= 1400                                                                   |
+| EMPLEADO              |                                 |                                                                           |
+|-----------------------|---------------------------------|---------------------------------------------------------------------------|
+| **DNI_Empleado**      | cadena de caracteres, tamaño 9  | El ultimo caracter tiene que ser una letra y tiene que ser un valor unico |
+| **_Nombre_Hospital_** | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula                   |
+| Funcion               | cadena de caracteres, tamaño 10 | Valor por defecto: Enfermero                                              |
+| Turno                 | cadena de caracteres, tamaño 1  |                                                                           |
+| Salario               | numerico entero, tamaño 10      | <= 1400                                                                   |
 
 ### Tabla DOCTOR
 
-| DOCTOR                 |                                 |                                                                           |
-|------------------------|---------------------------------|---------------------------------------------------------------------------|
-| **Numero_Doctor**      | numerico entero, tamaño 3       | <= 985                                                                    |
-| _DNI_Empleado_fk_      | cadena de caracteres, tamaño 9  | El ultimo caracter tiene que ser una letra y tiene que ser un valor unico |
-| Especialidad           | cadena de caracteres, tamaño 16 | Solo hay: Cardiología, Ginecología, Pediatría, Urología o Psiquiatría     |
+| DOCTOR            |                                 |                                                                           |
+|-------------------|---------------------------------|---------------------------------------------------------------------------|
+| **Numero_Doctor** | numerico entero, tamaño 3       | <= 985                                                                    |
+| _DNI_Empleado_    | cadena de caracteres, tamaño 9  | El ultimo caracter tiene que ser una letra y tiene que ser un valor unico |
+| Especialidad      | cadena de caracteres, tamaño 16 | Solo hay: Cardiología, Ginecología, Pediatría, Urología o Psiquiatría     |
 
 ### Tabla ENFERMO
 
-| ENFERMO                     |                                 |                                                                |
-|-----------------------------|---------------------------------|----------------------------------------------------------------|
-| **Numero_SS**               | numerico entero, tamaño 9       | Valor unico                                                    |
-| **_Nombre_Hospital_fk4_**   | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula        |
-| _Codigo_Habitacion_fk_      | cadena de caracteres, tamaño 3  |                                                                |
-| _Numero_Doctor_fk_          | numerico entero, tamaño 3       | <= 985                                                         |
-| Apellido                    | cadena de caracteres, tamaño 20 |                                                                |
-| Direccion                   | cadena de caracteres, tamaño 20 |                                                                |
-| Sexo                        | cadena de caracteres, tamaño 1  | Tiene que tener una letra mayuscula M(masculino) y F(femenino) |
-| Fecha_Ingreso               | fecha                           | Not Null                                                       |
-| Fecha_Alta                  | fecha                           |                                                                |
+| ENFERMO               |                                 |                                                                |
+|-----------------------|---------------------------------|----------------------------------------------------------------|
+| **Numero_SS**         | numerico entero, tamaño 9       | Valor unico                                                    |
+| **_Nombre_Hospital**  | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula        |
+| _Codigo_Habitacion_   | cadena de caracteres, tamaño 3  |                                                                |
+| _Numero_Doctor_       | numerico entero, tamaño 3       | <= 985                                                         |
+| Apellido              | cadena de caracteres, tamaño 20 |                                                                |
+| Direccion             | cadena de caracteres, tamaño 20 |                                                                |
+| Sexo                  | cadena de caracteres, tamaño 1  | Tiene que tener una letra mayuscula M(masculino) y F(femenino) |
+| Fecha_Ingreso         | fecha                           | Not Null                                                       |
+| Fecha_Alta            | fecha                           |                                                                |
 
 
 #### Añade las siguientes restricciones una vez crees las tablas:
