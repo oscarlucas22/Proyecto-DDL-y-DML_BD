@@ -1,8 +1,8 @@
 --Tabla HOSPITAL
-INSERT INTO HOSPITAL VALUES ('Provincial', '0 Donell 50', '964-4264', 502);
-INSERT INTO HOSPITAL VALUES ('General', 'Atocha s/n', '595-3111', 987);
-INSERT INTO HOSPITAL VALUES ('La Paz', 'Castellana 1000', '923-5411', 412);
-INSERT INTO HOSPITAL VALUES ('San Carlos', 'Ciudad Universitaria', '597-1500', 845);
+INSERT INTO HOSPITAL VALUES ('Provincial', '0 Donell 50', '964426487', 502);
+INSERT INTO HOSPITAL VALUES ('General', 'Atocha s/n', '995311187', 987);
+INSERT INTO HOSPITAL VALUES ('La Paz', 'Castellana 1000', '923541187', 412);
+INSERT INTO HOSPITAL VALUES ('San Carlos', 'Ciudad Universitaria', '997150087', 845);
 
 --Tabla PLANTA
 INSERT INTO PLANTA VALUES (1, 'Provincial', 'Ginecología');

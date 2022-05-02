@@ -72,8 +72,9 @@ create table ENFERMO (
     constraint CH_fk foreign key (Codigo_Habitacion) references HABITACION(Codigo_Habitacion),
     constraint ND_fk foreign key (Numero_Doctor) references DOCTOR(Numero_Doctor)
 );
+
 --1--
-alter table HOSPITAL add column Numero_Cama_Hospital int(3);
+alter table HOSPITAL add column Numero_Cama int(3);
 
 --2--
 alter table ENFERMO add column Nombre varchar(20);

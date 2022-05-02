@@ -127,9 +127,8 @@
     from DOCTOR;
 
 --11--
---Mostrar los DNI de los empleados cuyo salario sea mayor al salario de los doctores
-    select DNI_Empleado as 'DNI'
+--Muestra el DNI, su funcion y su salario del empleado que mas cobre
+    select DNI_Empleado, Funcion, Salario
     from EMPLEADO
-    where Salario > (select Salario
-                     from EMPLEADO
-                     where Funcion = 'Doctor');
+    where Salario = (select max(Salario)
+                     from EMPLEADO);
