@@ -20,8 +20,8 @@
 
 | HABITACION             |                                 |                                                                               |
 |------------------------|---------------------------------|-------------------------------------------------------------------------------|
-| **_Nombre_Hospital**   | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula                       |
 | **Codigo_Habitacion**  | cadena de caracteres, tamaño 3  | Debe estar constituido de el numero de la planta y un numero de la habitacion |
+| **_Nombre_Hospital_**  | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula                       |
 | Numero_Cama            | numerico entero, tamaño 3       | < 300                                                                         |
 
 ### Tabla EMPLEADO
