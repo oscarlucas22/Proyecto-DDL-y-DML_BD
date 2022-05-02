@@ -13,7 +13,7 @@
 | PLANTA                |                                 |                                                                       |
 |-----------------------|---------------------------------|-----------------------------------------------------------------------|
 | **Numero_Planta**     | numerico entero, tamaño 2       | <= 8                                                                  |
-| **_Nombre_Hospital_** | cadena de caracteres, tamaño 10 | Valor unico                                                           |
+| **_Nombre_Hospital_** | cadena de caracteres, tamaño 10 |                                                                       |
 | Especialidad          | cadena de caracteras,tamaño 20  | Solo hay: Cardiología, Ginecología, Pediatría, Urología o Psiquiatría |
 
 ### Tabla HABITACION
@@ -21,7 +21,7 @@
 | HABITACION             |                                 |                                                                               |
 |------------------------|---------------------------------|-------------------------------------------------------------------------------|
 | **Codigo_Habitacion**  | cadena de caracteres, tamaño 3  | Debe estar constituido de el numero de la planta y un numero de la habitacion |
-| **_Nombre_Hospital_**  | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula                       |
+| **_Nombre_Hospital_**  | cadena de caracteres, tamaño 10 |                                                                               |
 | Numero_Cama            | numerico entero, tamaño 3       | < 300                                                                         |
 
 ### Tabla EMPLEADO
@@ -29,7 +29,7 @@
 | EMPLEADO              |                                 |                                                                           |
 |-----------------------|---------------------------------|---------------------------------------------------------------------------|
 | **DNI_Empleado**      | cadena de caracteres, tamaño 9  | El ultimo caracter tiene que ser una letra y tiene que ser un valor unico |
-| **_Nombre_Hospital_** | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula                   |
+| **_Nombre_Hospital_** | cadena de caracteres, tamaño 10 |                                                                           |
 | Funcion               | cadena de caracteres, tamaño 10 | Valor por defecto: Enfermero                                              |
 | Turno                 | cadena de caracteres, tamaño 1  |                                                                           |
 | Salario               | numerico entero, tamaño 10      | <= 1400                                                                   |
@@ -39,7 +39,7 @@
 | DOCTOR            |                                 |                                                                           |
 |-------------------|---------------------------------|---------------------------------------------------------------------------|
 | **Numero_Doctor** | numerico entero, tamaño 3       | <= 985                                                                    |
-| _DNI_Empleado_    | cadena de caracteres, tamaño 9  | El ultimo caracter tiene que ser una letra y tiene que ser un valor unico |
+| _DNI_Empleado_    | cadena de caracteres, tamaño 9  |                                                                           |
 | Especialidad      | cadena de caracteres, tamaño 16 | Solo hay: Cardiología, Ginecología, Pediatría, Urología o Psiquiatría     |
 
 ### Tabla ENFERMO
@@ -47,9 +47,9 @@
 | ENFERMO               |                                 |                                                                |
 |-----------------------|---------------------------------|----------------------------------------------------------------|
 | **Numero_SS**         | numerico entero, tamaño 9       | Valor unico                                                    |
-| **_Nombre_Hospital_** | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula        |
+| **_Nombre_Hospital_** | cadena de caracteres, tamaño 10 |                                                                |
 | _Codigo_Habitacion_   | cadena de caracteres, tamaño 3  |                                                                |
-| _Numero_Doctor_       | numerico entero, tamaño 3       | <= 985                                                         |
+| _Numero_Doctor_       | numerico entero, tamaño 3       |                                                                |
 | Apellido              | cadena de caracteres, tamaño 20 |                                                                |
 | Direccion             | cadena de caracteres, tamaño 20 |                                                                |
 | Sexo                  | cadena de caracteres, tamaño 1  | Tiene que tener una letra mayuscula M(masculino) y F(femenino) |
