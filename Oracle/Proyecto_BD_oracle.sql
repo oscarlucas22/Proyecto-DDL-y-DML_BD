@@ -19,8 +19,8 @@ create table PLANTA (
 );
 
 create table HABITACION (
-    Nombre_Hospital_fk2 varchar2(10),
     Codigo_Habitacion varchar2(3),
+    Nombre_Hospital_fk2 varchar2(10),
     Numero_Cama number(3),
     constraint PK_3 primary key(Codigo_Habitacion, Nombre_Hospital_fk2),
     constraint NH_3 check(Nombre_Hospital_fk2 =  initcap(Nombre_Hospital_fk2)),
