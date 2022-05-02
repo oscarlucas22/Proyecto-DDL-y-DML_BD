@@ -19,8 +19,8 @@ create table PLANTA (
 );
 
 create table HABITACION (
-    Codigo_Habitacion varchar2(3),
     Nombre_Hospital_fk2 varchar2(10),
+    Codigo_Habitacion varchar2(3),
     Numero_Cama number(3),
     constraint PK_3 primary key(Codigo_Habitacion, Nombre_Hospital_fk2),
     constraint NH_3 check(Nombre_Hospital_fk2 =  initcap(Nombre_Hospital_fk2)),
@@ -71,30 +71,13 @@ create table ENFERMO (
     constraint CH_fk foreign key (Codigo_Habitacion_fk) references HABITACION(Codigo_Habitacion),
     constraint ND_fk foreign key (Numero_Doctor_fk) references DOCTOR(Numero_Doctor)
 );
---1--
+
 alter table HOSPITAL add Numero_Cama number(3);
-
---2--
-alter table ENFERMO add column Nombre varchar2(20);
-
---3--
-alter table EMPLEADO drop constraint S_1;
-
---4--
+alter table ENFERMO add Fecha_Nacimiento date;
+alter table EMPLEADO add constraint salario_1 check (Salario <= 1800);
 alter table ENFERMO add constraint FA_1 check(Fecha_Alta > Fecha_Ingreso);
-
---5--
 alter table EMPLEADO add constraint T_1 check(Turno = 'M' or Turno = 'T' or Turno = 'N');
-
---6--
 alter table ENFERMO drop  column Apellido;
-
---7--
 alter table ENFERMO drop column Sexo;
-
---7--
-alter table HOSPITAL disable constraint tlf_1;
-
---8--
-alter table EMPLEADO add constraint salario_1 check (Salario <= 5000);
-
+alter table EMPLEADO drop constraint S_1;
+alter table HOSPITAL drop constraint tlf_1;
