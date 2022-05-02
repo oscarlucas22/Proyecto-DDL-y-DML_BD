@@ -47,7 +47,7 @@
 | ENFERMO               |                                 |                                                                |
 |-----------------------|---------------------------------|----------------------------------------------------------------|
 | **Numero_SS**         | numerico entero, tamaño 9       | Valor unico                                                    |
-| **_Nombre_Hospital**  | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula        |
+| **_Nombre_Hospital_** | cadena de caracteres, tamaño 10 | Valor unico y debe de llevar la primera letra mayuscula        |
 | _Codigo_Habitacion_   | cadena de caracteres, tamaño 3  |                                                                |
 | _Numero_Doctor_       | numerico entero, tamaño 3       | <= 985                                                         |
 | Apellido              | cadena de caracteres, tamaño 20 |                                                                |
