@@ -3,7 +3,7 @@ create table HOSPITAL (
     Direccion varchar(20),
     Telefono varchar(9),
     constraint PK primary key (Nombre_Hospital),
-    constraint NH_1 check(Nombre_Hospital regexp binary '^[A-Z]{0,1}[a-z]'),
+    constraint NH_1 check(Nombre_Hospital regexp binary '^[A-Z]'),
     constraint tlf_1 check(Telefono regexp '^[9]')
 );
 
@@ -14,7 +14,7 @@ create table PLANTA (
     constraint PK_1 primary key (Numero_Planta, Nombre_Hospital),
     constraint NP_fk check(Numero_Planta <= 8),
     constraint NH_2 check(Nombre_Hospital regexp binary '^[A-Z]'),
-    constraint E_1 check( Especialidad in ('Cardiologia', 'Ginecologia', 'Pediatria', 'Urologia', 'Psiquiatria')),
+    constraint E_1 check( Especialidad in ('Cardiología', 'Ginecología', 'Pediatría', 'Urología', 'Psiquiatría')),
     constraint NH_fk foreign key (Nombre_Hospital) references HOSPITAL(Nombre_Hospital)
 );
 
@@ -23,7 +23,7 @@ create table HABITACION (
     Nombre_Hospital varchar(10),
     Numero_Cama int(3),
     constraint PK_2 primary key (Codigo_Habitacion, Nombre_Hospital),
-    constraint NH_3 check(Nombre_Hospital regexp binary '^[A-Z]{0,1}[a-z]'),
+    constraint NH_3 check(Nombre_Hospital regexp binary '^[A-Z]'),
     constraint CH_1 check(Codigo_Habitacion regexp binary '^[0-8][0-9]'),
     constraint NC_1 check(Numero_Cama < 300),
     constraint NH_fk2 foreign key (Nombre_Hospital) references HOSPITAL(Nombre_Hospital)
@@ -37,7 +37,7 @@ create table EMPLEADO (
     Salario int(4),
     constraint PK_3 primary key (DNI_Empleado, Nombre_Hospital),
     constraint DNI_E_fk check(DNI_Empleado regexp binary '^[0-9][0-9][0-9]\-[A-Z]'),
-    constraint NH_5 check(Nombre_Hospital regexp binary '^[A-Z]{0,1}[a-z]'),
+    constraint NH_5 check(Nombre_Hospital regexp binary '^[A-Z]'),
     constraint S_1 check(Salario <= 1400),
     constraint NH_fk3 foreign key (Nombre_Hospital) references HOSPITAL(Nombre_Hospital)
 );
@@ -64,7 +64,7 @@ create table ENFERMO (
     Fecha_Ingreso date not null,
     Fecha_Alta date,
     constraint PK_5 primary key (Numero_SS, Nombre_Hospital),
-    constraint NH_6 check(Nombre_Hospital regexp binary '^[A-Z]{0,1}[a-z]'),
+    constraint NH_6 check(Nombre_Hospital regexp binary '^[A-Z]'),
     constraint CH_2 check(Codigo_Habitacion regexp binary '^[0-8][0-9]'),
     constraint ND_2 check(Numero_Doctor <= 985),
     constraint Sex_1 check (Sexo = 'M' or Sexo = 'F'),

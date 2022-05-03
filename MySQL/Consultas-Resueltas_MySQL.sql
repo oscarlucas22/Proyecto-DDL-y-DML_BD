@@ -116,14 +116,16 @@
     on d.Numero_Doctor = e.Numero_Doctor;
 
 --10--
---Haz una consulta mostrando el numero de la SS de los enfermos Hospitalizados en el hospital  General y los dni de los empleados que son doctores que trabajan en el hospital General y unelas
-    select Numero_SS as 'Numero de la SS y DNI del hospital General'
+--Haz una consulta mostrando el numero de la SS de los enfermos hospitalizados en el hospital  General y los numeros de los doctores que trabajan en el hospital General y unelas
+    select Numero_SS as 'Numero de la SS y Nº Doc del hospital General'
     from ENFERMO
     where Nombre_Hospital = 'General'
     UNION
-    select DNI_Empleado
-    from EMPLEADO
-    where Funcion = 'Doctor' and Nombre_Hospital = 'General';
+    select Numero_Doctor
+    from DOCTOR
+    where DNI_Empleado in (select DNI_Empleado 
+                            from EMPLEADO 
+                            where Nombre_Hospital = 'General');
 
 --Muestras los dni que son identicos en las tablas EMPLEADO y DOCTOR
     select DNI_Empleado as 'DNI identicos de la tabla EMPLEADOS y DOCTOR'
