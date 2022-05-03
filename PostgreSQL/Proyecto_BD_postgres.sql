@@ -1,3 +1,5 @@
+--Creación de tablas
+
 create table HOSPITAL (
     Nombre_Hospital varchar(10) unique,
     Direccion varchar(20),
@@ -72,6 +74,9 @@ create table ENFERMO (
     constraint CH_fk foreign key (Nombre_Hospital, Codigo_Habitacion) references HABITACION(Nombre_Hospital, Codigo_Habitacion),
     constraint ND_fk foreign key (Numero_Doctor) references DOCTOR(Numero_Doctor)
 );
+
+
+--Añade las siguientes restricciones una vez crees las tablas:
 
 --1--
 alter table HOSPITAL add column Numero_Cama integer;
