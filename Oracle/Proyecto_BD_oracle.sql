@@ -85,6 +85,8 @@ create table ENFERMO (
 );
 
 
+--Añade las siguientes restricciones una vez crees las tablas:
+
 --1--
 alter table HOSPITAL add Numero_Cama number(3);
 
