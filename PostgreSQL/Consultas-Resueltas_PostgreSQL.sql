@@ -36,13 +36,17 @@
 --4--
 --Consulta el numero de la SS de los enfermos que esten en el hospital de la direccion Ciudad Universitaria
     select Numero_SS as "Numero de la SS"
-    from ENFERMO e, HOSPITAL h
-    where h.Nombre_Hospital = e.Nombre_Hospital and h.Direccion = 'Ciudad Universitaria';
+    from ENFERMO
+    where Nombre_Hospital in (select Nombre_Hospital 
+                              from HOSPITAL
+                              where Direccion = 'Ciudad Universitaria');
 
 --Muestra el DNI y el turno de los empleados que sean doctores y tengan como especialidad pediatria
-    select e.DNI_Empleado as "DNI", Turno as "Turno"
-    from EMPLEADO e, DOCTOR d
-    where e.DNI_Empleado = d.DNI_Empleado and Especialidad = 'Pediatría';
+    select DNI_Empleado as "DNI", Turno as "Turno"
+    from EMPLEADO
+    where DNI_Empleado in (select DNI_Empleado
+                             from DOCTOR
+                             where Especialidad = 'Pediatría');
 
 --5--
 --Inserta un nuevo empleado que tenga como dni 114-O y los datos restantes seran igual que el empleado con dni 116-N
