@@ -14,11 +14,13 @@
 --2--
 --Crea una vista para registrar el acceso a los hospitales que ha hecho el doctor correspondiente al numero 453
     create or replace view doctor_453
-    as select h.Nombre_Hospital
-    from HOSPITAL h, EMPLEADO e, DOCTOR d
-    where e.DNI_Empleado = d.DNI_Empleado
-          and h.Nombre_Hospital = e.Nombre_Hospital
-          and Numero_Doctor = 453;
+    as select Nombre_Hospital
+    from HOSPITAL
+    where Nombre_Hospital in (select Nombre_Hospital 
+                              from EMPLEADO 
+                              where DNI_Empleado in (select DNI_Empleado 
+                                                     from DOCTOR 
+                                                     where Numero_Doctor = 453));
 
     \d doctor_453;
     select * from doctor_453;
