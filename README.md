@@ -107,4 +107,4 @@
     * Muestras los dni que son identicos en las tablas EMPLEADO y DOCTOR
 
 * Subconsultas correlacionadas.
-    * Mostrar los DNI de los empleados cuyo salario sea mayores al salario de los doctores
+    * Muestra el DNI, su funcion y su salario del empleado que mas cobre
