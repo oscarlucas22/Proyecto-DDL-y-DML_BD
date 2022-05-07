@@ -100,7 +100,7 @@ alter table ENFERMO drop column Apellido;
 alter table ENFERMO drop column Sexo;
 
 --8--
-alter table HOSPITAL drop constraint tlf_1;
+alter table HOSPITAL drop constraint tlf_1; --No se puede desabilitar una restriccion en PostgreSQL por lo tanto la elimino
 
 --9--
 alter table EMPLEADO add constraint salario_1 check (Salario <= 5000);
