@@ -72,17 +72,17 @@
 ### Consultas
 * Consulta sencilla
     * Obtener el nombre del hospital donde la planta tenga como especialidad Pediatría
-    * Obtener los dni de los empleados que son cirujanos
+    * Obtener los dni de los empleados que tengan como funcion Cirujano
  
  * Vistas
-    * Crea una vista para registrar el acceso a los hospitales en los que el numero del doctor es 453
+    * Crea una vista para mostrar el nombre los hospitales en los que el numero del doctor sea 453
     
 * Subconsultas
     * Obten el numero del doctor cuyo turno sea de noche
     
 * Combinaciones de tablas
     * Consulta el numero de la SS de los enfermos que esten en el hospital de la direccion Ciudad Universitaria
-    * Muestra el DNI y el turno de los empleados que sean doctores y tengan como especialidad pediatria
+    * Muestra el DNI y el turno de los empleados que sean doctores y tengan como especialidad Pediatría
 
 * Insercion de registros. Colsultas de datos anexados
     * Inserta un nuevo empleado que tenga como dni 114-O y los datos restantes seran igual que el empleado con dni 116-N
