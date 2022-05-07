@@ -109,7 +109,7 @@ alter table ENFERMO drop column Apellido;
 alter table ENFERMO drop column Sexo;
 
 --8--
-alter table HOSPITAL drop constraint tlf_1;
+alter table HOSPITAL disable constraint tlf_1;
 
 --9--
 alter table EMPLEADO add constraint salario_1 check (Salario <= 5000);
