@@ -6,7 +6,7 @@
     from PLANTA
     where Especialidad = 'Psiquiatría';
 
---Obtener los dni de los empleados que son cirujanos
+--Obtener los codigos de los empleados que son cirujanos
     select Codigo_Empleado
     from EMPLEADO
     where Funcion = 'Cirujano';
@@ -49,20 +49,20 @@
                              where Especialidad = 'Pediatría');
 
 --5--
---Inserta un nuevo empleado que tenga como dni 114-O y los datos restantes seran igual que el empleado con dni 116-N
+--Inserta un nuevo empleado que tenga como codigo 114-O y los datos restantes seran igual que el empleado con codigo 116-N
     insert into EMPLEADO
     select '114-O', Nombre_Hospital, Funcion, Turno, Salario
     from EMPLEADO
     where Codigo_Empleado = '116-N';
 
---Inserta un nuevo doctor que tenga como numero 202, como dni 114-O y de especialidad igual que el numero de doctor correspondiente al 398
+--Inserta un nuevo doctor que tenga como numero 202, como codigo 114-O y de especialidad igual que el numero de doctor correspondiente al 398
     insert into DOCTOR
     select 202, '114-O', Especialidad
     from DOCTOR
     where Numero_Doctor = 398;
 
 --6--
---Haz que el empleado con el Codigo 115-M cobre el doble que el empleado con el dni 777-G
+--Haz que el empleado con el Codigo 115-M cobre el doble que el empleado con el codigo 777-G
     update EMPLEADO
     set Salario = (select Salario * 2
                    from EMPLEADO
