@@ -28,7 +28,7 @@
 
 | EMPLEADO              |                                 |                                                                           |
 |-----------------------|---------------------------------|---------------------------------------------------------------------------|
-| **DNI_Empleado**      | cadena de caracteres, tamaño 9  | El ultimo caracter tiene que ser una letra y tiene que ser un valor unico |
+| **Codigo_Empleado**   | cadena de caracteres, tamaño 9  | El ultimo caracter tiene que ser una letra y tiene que ser un valor unico |
 | **_Nombre_Hospital_** | cadena de caracteres, tamaño 10 |                                                                           |
 | Funcion               | cadena de caracteres, tamaño 10 | Valor por defecto: Enfermero                                              |
 | Turno                 | cadena de caracteres, tamaño 1  |                                                                           |
@@ -39,7 +39,7 @@
 | DOCTOR            |                                 |                                                                           |
 |-------------------|---------------------------------|---------------------------------------------------------------------------|
 | **Numero_Doctor** | numerico entero, tamaño 3       | <= 985                                                                    |
-| _DNI_Empleado_    | cadena de caracteres, tamaño 9  |                                                                           |
+| _Codigo_Empleado_ | cadena de caracteres, tamaño 9  |                                                                           |
 | Especialidad      | cadena de caracteres, tamaño 16 | Solo hay: Cardiología, Ginecología, Pediatría, Urología o Psiquiatría     |
 
 ### Tabla ENFERMO
@@ -71,7 +71,7 @@
 
 ### Consultas
 * Consulta sencilla
-    * Obtener el nombre del hospital donde la planta tenga como especialidad Pediatría
+    * Obtener el nombre del hospital donde la especialidad de la planta sea Psquiatría
     * Obtener los dni de los empleados que tengan como funcion Cirujano
  
  * Vistas
