@@ -7,7 +7,7 @@
     where Especialidad = 'Psiquiatría';
 
 --Obtener los dni de los empleados que son cirujanos
-    select DNI_Empleado
+    select Codigo_Empleado
     from EMPLEADO
     where Funcion = 'Cirujano';
 
@@ -18,7 +18,7 @@
     from HOSPITAL
     where Nombre_Hospital in (select Nombre_Hospital 
                               from EMPLEADO 
-                              where DNI_Empleado in (select DNI_Empleado 
+                              where Codigo_Empleado in (select Codigo_Empleado 
                                                      from DOCTOR 
                                                      where Numero_Doctor = 453));
 
@@ -29,7 +29,7 @@
 --Obten el numero del doctor cuyo turno sea de noche
     select Numero_Doctor as 'Numero del Doctor'
     from DOCTOR
-    where DNI_Empleado = (select DNI_Empleado 
+    where Codigo_Empleado = (select Codigo_Empleado 
                           from EMPLEADO 
                           where Funcion = 'Doctor' and Turno = 'N');
 
@@ -41,10 +41,10 @@
                               from HOSPITAL
                               where Direccion = 'Ciudad Universitaria');
 
---Muestra el DNI y el turno de los empleados que sean doctores y tengan como especialidad pediatria
-    select DNI_Empleado as 'DNI', Turno as 'Turno'
+--Muestra el Codigo y el turno de los empleados que sean doctores y tengan como especialidad pediatria
+    select Codigo_Empleado as 'Codigo', Turno as 'Turno'
     from EMPLEADO
-    where DNI_Empleado in (select DNI_Empleado
+    where Codigo_Empleado in (select Codigo_Empleado
                              from DOCTOR
                              where Especialidad = 'Pediatría');
 
@@ -53,7 +53,7 @@
     insert into EMPLEADO
     select '114-O', Nombre_Hospital, Funcion, Turno, Salario
     from EMPLEADO
-    where DNI_Empleado = '116-N';
+    where Codigo_Empleado = '116-N';
 
 --Inserta un nuevo doctor que tenga como numero 202, como dni 114-O y de especialidad igual que el numero de doctor correspondiente al 398
     insert into DOCTOR
@@ -62,25 +62,25 @@
     where Numero_Doctor = 398;
 
 --6--
---Haz que el empleado con el DNI 115-M cobre el doble que el empleado con el dni 777-G
+--Haz que el empleado con el Codigo 115-M cobre el doble que el empleado con el dni 777-G
     update EMPLEADO
     set Salario = (select Salario * 2
                    from EMPLEADO
-                   where DNI_Empleado = '777-G')
-    where DNI_Empleado = (select DNI_Empleado 
-                     from EMPLEADO
-                     where DNI_Empleado = '115-M');
+                   where Codigo_Empleado = '777-G')
+    where Codigo_Empleado = (select Codigo_Empleado 
+                             from EMPLEADO
+                             where Codigo_Empleado = '115-M');
 
 --7--
---Crea una tabla llamada DATOS en la que guardaras mediante una inserción de datos el DNI de empleado, la Funcion y el Salario de la tabla EMPLEADOS y mediante una consulta de eliminación elimina las filas que tengan una salario mayor que 1200
+--Crea una tabla llamada DATOS en la que guardaras mediante una inserción de datos el Codigo de empleado, la Funcion y el Salario de la tabla EMPLEADOS y mediante una consulta de eliminación elimina las filas que tengan una salario mayor que 1200
     create table DATOS (
-        new_DNI varchar(9),
+        new_Codigo varchar(9),
         new_Funcion varchar(10),
         new_Salario int(4)
     );
 
     insert into DATOS 
-    select DNI_Empleado, Funcion, Salario
+    select Codigo_Empleado, Funcion, Salario
     from EMPLEADO;
 
     delete 
@@ -123,20 +123,20 @@
     UNION
     select Numero_Doctor
     from DOCTOR
-    where DNI_Empleado in (select DNI_Empleado 
-                            from EMPLEADO 
-                            where Nombre_Hospital = 'General');
+    where Codigo_Empleado in (select Codigo_Empleado 
+                              from EMPLEADO 
+                              where Nombre_Hospital = 'General');
 
---Muestras los dni que son identicos en las tablas EMPLEADO y DOCTOR
-    select DNI_Empleado as 'DNI identicos de la tabla EMPLEADOS y DOCTOR'
+--Muestras los codigos que son identicos en las tablas EMPLEADO y DOCTOR
+    select Codigo_Empleado as 'Codigos identicos de la tabla EMPLEADOS y DOCTOR'
     from EMPLEADO
     INTERSECT
-    select DNI_Empleado
+    select Codigo_Empleado
     from DOCTOR;
 
 --11--
---Muestra el DNI, su funcion y su salario del empleado que mas cobre
-    select DNI_Empleado, Funcion, Salario
+--Muestra el Codigo, su funcion y su salario del empleado que mas cobre
+    select Codigo_Empleado, Funcion, Salario
     from EMPLEADO
     where Salario = (select max(Salario)
                      from EMPLEADO);
