@@ -88,10 +88,10 @@ INSERT INTO EMPLEADO VALUES ('777-G', 'San Carlos', 'Interno', 'M', 1050);
 INSERT INTO EMPLEADO VALUES ('115-M', 'Provincial', 'Cirujano', 'T', 1500);
 INSERT INTO EMPLEADO VALUES ('116-N', 'Provincial', 'Interno', 'M', 1050);
 INSERT INTO EMPLEADO VALUES ('333-C', 'Provincial', 'Cirujano', 'N', 1500);
-INSERT INTO EMPLEADO (DNI_Empleado,Nombre_Hospital,Turno,Salario) VALUES ('555-E', 'La Paz', 'T', 1200);
-INSERT INTO EMPLEADO (DNI_Empleado,Nombre_Hospital,Turno,Salario) VALUES ('888-H', 'San Carlos', 'N', 1200);
-INSERT INTO EMPLEADO (DNI_Empleado,Nombre_Hospital,Turno,Salario) VALUES ('117-O', 'La Paz', 'M', 1200);
-INSERT INTO EMPLEADO (DNI_Empleado,Nombre_Hospital,Turno,Salario) VALUES ('118-P', 'General', 'N', 1200);
+INSERT INTO EMPLEADO (Codigo_Empleado,Nombre_Hospital,Turno,Salario) VALUES ('555-E', 'La Paz', 'T', 1200);
+INSERT INTO EMPLEADO (Codigo_Empleado,Nombre_Hospital,Turno,Salario) VALUES ('888-H', 'San Carlos', 'N', 1200);
+INSERT INTO EMPLEADO (Codigo_Empleado,Nombre_Hospital,Turno,Salario) VALUES ('117-O', 'La Paz', 'M', 1200);
+INSERT INTO EMPLEADO (Codigo_Empleado,Nombre_Hospital,Turno,Salario) VALUES ('118-P', 'General', 'N', 1200);
 
 --Tabla DOCTOR
 INSERT INTO DOCTOR VALUES (435, '111-A', 'Cardiología');
