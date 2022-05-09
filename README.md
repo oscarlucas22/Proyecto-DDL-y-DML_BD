@@ -92,7 +92,7 @@
     * Haz que los cirujanos cobren el doble que los internos
 
 * Borrado de registros. Consultas de eliminación.
-    * Crea una tabla en la que guarde DNI de empleado, Funcion, Salario y la Especialidad de los doctores y haz una consulta que borre los salarios de los doctores que sean cardiologos
+    * Crea una tabla llamada DATOS en la que guardaras mediante una inserción de datos el DNI de empleado, la Funcion y el Salario de la tabla EMPLEADOS y mediante una consulta de eliminación elimina las filas que tengan una salario mayor que 1200
 
 * Group by y having
     * Mostrar los hospitales y el codigo de habitacion que tienen mas de 25 numero de camas en las habitaciones
