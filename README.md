@@ -71,28 +71,28 @@
 
 ### Consultas
 * Consulta sencilla
-    * Obtener el nombre del hospital donde la especialidad de la planta sea Psquiatría
-    * Obtener los dni de los empleados que tengan como funcion Cirujano
+    * Obtener el nombre del hospital cuya planta sea de la especialidad de Psiquiatria
+    * Obtener los codigos de los empleados que son cirujanos
  
  * Vistas
-    * Crea una vista para mostrar el nombre los hospitales en los que el numero del doctor sea 453
+    * Crea una vista para registrar el acceso a los hospitales que ha hecho el doctor correspondiente al numero 453
     
 * Subconsultas
     * Obten el numero del doctor cuyo turno sea de noche
     
 * Combinaciones de tablas
     * Consulta el numero de la SS de los enfermos que esten en el hospital de la direccion Ciudad Universitaria
-    * Muestra el DNI y el turno de los empleados que sean doctores y tengan como especialidad Pediatría
+    * Muestra el Codigo y el turno de los empleados que sean doctores y tengan como especialidad Pediatria
 
 * Insercion de registros. Colsultas de datos anexados
-    * Inserta un nuevo empleado que tenga como dni 114-O y los datos restantes seran igual que el empleado con dni 116-N
-    * Inserta un nuevo doctor que tenga como numero 202, como dni 114-O y de especialidad igual que el numero de doctor correspondiente al 398
+    * Inserta un nuevo empleado que tenga como codigo 114-O y los datos restantes seran igual que el empleado con codigo 116-N
+    * Inserta un nuevo doctor que tenga como numero 202, como codigo 114-O y de especialidad igual que el numero de doctor correspondiente al 398
     
 * Modificación de registros. Consultas de actualización.
-    * Haz que los cirujanos cobren el doble que los internos
+    * Haz que el empleado con el Codigo 115-M cobre el doble que el empleado con el codigo 777-G
 
 * Borrado de registros. Consultas de eliminación.
-    * Crea una tabla llamada DATOS en la que guardaras mediante una inserción de datos el DNI de empleado, la Funcion y el Salario de la tabla EMPLEADOS y mediante una consulta de eliminación elimina las filas que tengan una salario mayor que 1200
+    * Crea una tabla llamada DATOS en la que guardaras mediante una inserción de datos el Codigo de empleado, la Funcion y el Salario de la tabla EMPLEADOS y mediante una consulta de eliminación elimina las filas que tengan una salario mayor que 1200
 
 * Group by y having
     * Mostrar los hospitales y el codigo de habitacion que tienen mas de 25 numero de camas en las habitaciones
@@ -104,7 +104,7 @@
 
 * Consultas con operadores de conjuntos.
     * Haz una consulta mostrando el numero de la SS de los enfermos hospitalizados en el hospital  General y los numeros de los doctores que trabajan en el hospital General y unelas
-    * Muestras los dni que son identicos en las tablas EMPLEADO y DOCTOR
+    * Muestras los codigos que son identicos en las tablas EMPLEADO y DOCTOR
 
 * Subconsultas correlacionadas.
-    * Muestra el DNI, su funcion y su salario del empleado que mas cobre
+    * Muestra el Codigo, su funcion y su salario del empleado que mas cobre
