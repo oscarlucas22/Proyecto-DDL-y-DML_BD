@@ -71,7 +71,7 @@
 
 ### Consultas
 * Consulta sencilla
-    * Obtener el nombre del hospital cuya planta sea de la especialidad de Psiquiatria
+    * Obtener el nombre del hospital donde la planta sea de la especialidad de Psiquiatria
     * Obtener los codigos de los empleados que son cirujanos
  
  * Vistas
