@@ -44,17 +44,17 @@
 
 ### Tabla ENFERMO
 
-| ENFERMO               |                                 |                                                                |
-|-----------------------|---------------------------------|----------------------------------------------------------------|
-| **Numero_SS**         | numerico entero, tamaño 9       | Valor unico                                                    |
-| **_Nombre_Hospital_** | cadena de caracteres, tamaño 10 |                                                                |
-| _Codigo_Habitacion_   | cadena de caracteres, tamaño 3  |                                                                |
-| _Numero_Doctor_       | numerico entero, tamaño 3       |                                                                |
-| Apellido              | cadena de caracteres, tamaño 20 |                                                                |
-| Direccion             | cadena de caracteres, tamaño 20 |                                                                |
-| Sexo                  | cadena de caracteres, tamaño 1  | Tiene que tener una letra mayuscula M(masculino) y F(femenino) |
-| Fecha_Ingreso         | fecha                           | Not Null                                                       |
-| Fecha_Alta            | fecha                           | No puede ser ni en los meses de Junio, Julio y Agosto          |
+| ENFERMO               |                                 |                                                                 |
+|-----------------------|---------------------------------|-----------------------------------------------------------------|
+| **Numero_SS**         | numerico entero, tamaño 9       | Valor unico                                                     |
+| **_Nombre_Hospital_** | cadena de caracteres, tamaño 10 |                                                                 |
+| _Codigo_Habitacion_   | cadena de caracteres, tamaño 3  |                                                                 |
+| _Numero_Doctor_       | numerico entero, tamaño 3       |                                                                 |
+| Apellido              | cadena de caracteres, tamaño 20 |                                                                 |
+| Direccion             | cadena de caracteres, tamaño 20 |                                                                 |
+| Sexo                  | cadena de caracteres, tamaño 1  | Tiene que tener una letra mayuscula M(masculino) y F(femenino)  |
+| Fecha_Ingreso         | fecha                           | Not Null. No puede ser ni en los meses de Junio, Julio y Agosto |
+| Fecha_Alta            | fecha                           |                                                                 |
 
 
 #### Añade las siguientes restricciones una vez crees las tablas:
