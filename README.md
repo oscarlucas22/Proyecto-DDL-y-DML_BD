@@ -54,7 +54,7 @@
 | Direccion             | cadena de caracteres, tamaño 20 |                                                                |
 | Sexo                  | cadena de caracteres, tamaño 1  | Tiene que tener una letra mayuscula M(masculino) y F(femenino) |
 | Fecha_Ingreso         | fecha                           | Not Null                                                       |
-| Fecha_Alta            | fecha                           |                                                                |
+| Fecha_Alta            | fecha                           | No puede ser ni en los meses de Junio, Julio y Agosto          |
 
 
 #### Añade las siguientes restricciones una vez crees las tablas:
@@ -99,8 +99,8 @@
     * Mostrar el nombre, el año de la fecha de alta (solo el año) y el numero del doctor de los enfermos que ha antendido el doctor correspondiente al numero 607
    
 * Outer joins. Combinaciones externas.
-    * Muestra todos los nombres de los hospitales y en otra tabla a la izquierda sus correspondientes plantas
-    * Muestra la fecha de alta de los enfermos y en otra tabla a la derecha el numero de doctor que le ha atendido  
+    * Muestra todos los nombres de los hospitales junto a las plantas que les corresponden
+    * Muestra el numero de la seguridad social de los enfermos junto al codigo de los doctores que le ha atendido ordenados segun la fecha de ingreso de los enfermos  
 
 * Consultas con operadores de conjuntos.
     * Haz una consulta mostrando el numero de la SS de los enfermos hospitalizados en el hospital  General y los numeros de los doctores que trabajan en el hospital General y unelas
