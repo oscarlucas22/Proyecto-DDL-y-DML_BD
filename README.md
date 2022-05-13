@@ -38,7 +38,7 @@
 
 | DOCTOR            |                                 |                                                                           |
 |-------------------|---------------------------------|---------------------------------------------------------------------------|
-| **Codigo_Doctor** | numerico entero, tamaño 3       | <= 985                                                                    |
+| **Numero_Doctor** | numerico entero, tamaño 3       | <= 985                                                                    |
 | _Codigo_Empleado_ | cadena de caracteres, tamaño 9  |                                                                           |
 | Especialidad      | cadena de caracteres, tamaño 16 | Solo hay: Cardiología, Ginecología, Pediatría, Urología o Psiquiatría     |
 
