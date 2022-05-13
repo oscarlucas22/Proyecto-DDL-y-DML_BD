@@ -75,10 +75,10 @@
     * Obtener los codigos de los empleados que son cirujanos
  
  * Vistas
-    * Crea una vista para registrar el acceso a los hospitales que ha hecho el doctor correspondiente al numero 453
+    * Crea una vista que muestre los nombres de los hospitales donde el doctor tenga como numero el 453
     
 * Subconsultas
-    * Obten el numero del doctor cuyo turno sea de noche
+    * Obten el numero del doctor donde el turno sea de noche
     
 * Combinaciones de tablas
     * Consulta el numero de la SS de los enfermos que esten en el hospital de la direccion Ciudad Universitaria
