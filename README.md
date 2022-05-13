@@ -99,7 +99,7 @@
     * Mostrar el nombre, el año de la fecha de alta (solo el año) y el numero del doctor de los enfermos que ha antendido el doctor correspondiente al numero 607
    
 * Outer joins. Combinaciones externas.
-    * Muestra todos los nombres de los hospitales junto a las plantas que les corresponden
+    * Muestra todos los nombres de los hospitales junto al numero de plantas que tiene cada hospital
     * Muestra el numero de la seguridad social de los enfermos junto al codigo de los doctores que le ha atendido ordenados segun la fecha de ingreso de los enfermos  
 
 * Consultas con operadores de conjuntos.
@@ -107,4 +107,4 @@
     * Muestras los codigos que son identicos en las tablas EMPLEADO y DOCTOR
 
 * Subconsultas correlacionadas.
-    * Muestra el Codigo, su funcion y su salario del empleado que mas cobre
+    * Muestra el Codigo, su funcion y su salario del empleado o empleados que mas cobren
