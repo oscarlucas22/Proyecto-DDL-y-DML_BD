@@ -59,7 +59,7 @@
 
 #### Añade las siguientes restricciones una vez crees las tablas:
 * Añade una columna llamada Numero_Cama que sea de tipo numerico entero, tamaño 3 a la tabla HOSPITAL
-* Añade una columna llamada Fecha_Nacimiento que sea de tipo date a la tabla de ENFERMO
+* Añade una columna llamada Fecha_Nacimiento que sea de tipo fecha a la tabla de ENFERMO
 * Elimina la restriccion del Salario en la tabla EMPLEADO
 * Modifica la columna de Fecha_Alta de la tabla ENFERMO y pon una restriccion que la fecha de alta debe ser posterior a la fecha de ingreso
 * Modifica el Turno de la tabla EMPLEADOS y pon una restriccion que tiene que ser una letra mayuscula M(Mañana), T(Tarde), N(Noche)
