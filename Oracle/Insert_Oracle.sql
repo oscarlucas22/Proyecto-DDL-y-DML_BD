@@ -106,7 +106,7 @@ INSERT INTO DOCTOR VALUES (607, '113-K', 'Pediatría');
 INSERT INTO ENFERMO VALUES (280862482, 'Provincial', '310', 435 ,'Recoletos 50', to_date('23/05/1967'), to_date('21/05/2007'), to_date('20/05/1950'));
 INSERT INTO ENFERMO VALUES (284991452, 'La Paz', '430', 982, 'Alcala 12', to_date('21/05/1960'), to_date('20/06/2008'), to_date('13/04/1963'));
 INSERT INTO ENFERMO VALUES (160657471, 'San Carlos', '430', 398, 'Recoletos 50', to_date('23/01/1942'), to_date('10/05/2000'), to_date('10/03/1902'));
-INSERT INTO ENFERMO VALUES (380010217, 'San Carlos', '410', 386, 'Mayor 71', to_date('18/05/1940'), to_date('12/07/2000'), to_date('30/02/1900'));
+INSERT INTO ENFERMO VALUES (380010217, 'San Carlos', '410', 386, 'Mayor 71', to_date('18/05/1940'), to_date('12/07/2000'), to_date('20/08/1902'));
 INSERT INTO ENFERMO VALUES (440294390, 'Provincial', '210', 435, 'Orense 11', to_date('29/02/1952'), to_date('30/08/2001'), to_date('21/08/1902'));
 INSERT INTO ENFERMO VALUES (311969044, 'Provincial', '330', 435, 'Peron 38', to_date('16/09/1945'), to_date('13/05/2000'), to_date('17/09/1970'));
 INSERT INTO ENFERMO VALUES (285201776, 'General', '120', 607, 'Lopez de Hoyos 2', to_date('26/12/1980'), to_date('12/10/2003'), to_date('12/02/1972'));
