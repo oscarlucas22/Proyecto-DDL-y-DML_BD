@@ -34,24 +34,24 @@
                           where Funcion = 'Doctor' and Turno = 'N');
 
 --4--
---Consulta el numero de la SS de los enfermos que esten en el hospital de la direccion Ciudad Universitaria
+--Haz una consulta que muestre el numero de la SS de los enfermos que esten en el hospital de la direccion Ciudad Universitaria
     select Numero_SS as "Numero de la SS"
     from ENFERMO e, HOSPITAL h 
     where e.Nombre_Hospital = h.Nombre_Hospital and h.Direccion = 'Ciudad Universitaria';
 
---Muestra el Codigo y el turno de los empleados que sean doctores y tengan como especialidad pediatria
+--Haz una consulta que muestre el codigo y el turno de los empleados que sean doctores y tengan como especialidad pediatria
     select e.Codigo_Empleado as "Codigo", Turno as "Turno"
     from EMPLEADO e, DOCTOR d
     where e.Codigo_Empleado = d.Codigo_Empleado and Especialidad = 'Pediatría';
 
 --5--
---Inserta un nuevo empleado que tenga como Codigo 114-O y los datos restantes seran igual que el empleado con Codigo 116-N
+--Haz una consulta que inserte un nuevo empleado que tenga como codigo 114-O y los datos restantes seran igual que el empleado con codigo 116-N
     insert into EMPLEADO
     select '114-O', Nombre_Hospital, Funcion, Turno, Salario
     from EMPLEADO
     where Codigo_Empleado = '116-N';
 
---Inserta un nuevo doctor que tenga como numero 202, como Codigo 114-O y de especialidad igual que el numero de doctor correspondiente al 398
+--Haz una consulta que inserte un nuevo doctor que tenga como numero 202, como codigo 114-O y de especialidad igual que el numero de doctor correspondiente al 398
     insert into DOCTOR
     select 202, '114-O', Especialidad
     from DOCTOR
@@ -82,14 +82,14 @@
     where new_Salario > 1200;
 
 --8--
---Mostrar los hospitales y el codigo de habitacion que tienen mas de 25 numero de camas en las habitaciones
+--Haz una consulta que muestre los hospitales y el codigo de habitacion que tienen mas de 25 numero de camas en las habitaciones
     select h.Nombre_Hospital as "Nombre del Hospital", Codigo_Habitacion as "Codigo de la Habitacion"
     from HOSPITAL h, HABITACION hb
     where h.Nombre_Hospital = hb.Nombre_Hospital
     group by h.Nombre_Hospital, Codigo_Habitacion, hb.Numero_Cama
     having hb.Numero_Cama > 25;
 
---Mostrar el año de la fecha de alta (solo el año) y el numero del doctor de los enfermos que ha antendido el doctor correspondiente al numero 607 
+--Haz una consulta que muestre el año de la fecha de alta (solo el año) y el numero del doctor de los enfermos que ha antendido el doctor correspondiente al numero 607
     select extract( year from Fecha_Alta) as "Año que se dio de alta", d.Numero_Doctor as "Numero del doctor"
     from ENFERMO e, DOCTOR d
     where d.Numero_Doctor = e.Numero_Doctor
@@ -97,14 +97,14 @@
     having d.Numero_Doctor = 607;
 
 --9--
---Muestra todos los nombres de los hospitales junto al numero de plantas que tiene cada hospital
+--Haz una consulta con combinacion esterna que muestre todos los nombres de los hospitales junto al numero de plantas que tiene cada hospital
     select h.Nombre_Hospital as "Nombre de los hospitales", count(p.Nombre_Hospital) as "Numero de plantas"
     from HOSPITAL h 
     left join PLANTA p 
     on h.Nombre_Hospital = p.Nombre_Hospital
     group by h.Nombre_Hospital, p.Nombre_Hospital;
 
---Muestra el numero de la seguridad social de los enfermos junto al numero del doctor que le ha atendido ordenados segun la fecha de ingreso de los enfermos
+--Haz una consulta con combinacion externa que muestre el numero de la seguridad social de los enfermos junto al numero del doctor que le ha atendido ordenados segun la fecha de ingreso de los enfermos
     select Numero_SS as "Numero Seg Soc", d.Numero_Doctor as "Numero del doctor"
     from ENFERMO e
     left join DOCTOR d
@@ -123,7 +123,7 @@
     select Codigo_Empleado from DOCTOR;
 
 --11--
---Muestra el Codigo, su funcion y su salario del empleado o empleados que mas cobren
+--Haz una consulta que muestre el codigo, su funcion y su salario del empleado o empleados que mas cobren
     select Codigo_Empleado, Funcion, Salario
     from EMPLEADO
     where Salario = (select max(Salario)
