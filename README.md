@@ -96,15 +96,15 @@
 
 * Group by y having
     * Mostrar los hospitales y el codigo de habitacion que tienen mas de 25 numero de camas en las habitaciones
-    * Mostrar el nombre, el año de la fecha de alta (solo el año) y el numero del doctor de los enfermos que ha antendido el doctor correspondiente al numero 607
+    * Mostrar el año de la fecha de alta (solo el año) y el numero del doctor de los enfermos que ha antendido el doctor correspondiente al numero 607
    
 * Outer joins. Combinaciones externas.
     * Muestra todos los nombres de los hospitales junto al numero de plantas que tiene cada hospital
     * Muestra el numero de la seguridad social de los enfermos junto al codigo de los doctores que le ha atendido ordenados segun la fecha de ingreso de los enfermos  
 
 * Consultas con operadores de conjuntos.
-    * Haz una consulta mostrando el numero de la SS de los enfermos hospitalizados en el hospital  General y los numeros de los doctores que trabajan en el hospital General y unelas
-    * Muestras los codigos que son identicos en las tablas EMPLEADO y DOCTOR
+    * Haz una consulta con operadores de conjunto que muestre el numero de la SS de los enfermos que hayan nacido el mes de Enero y de los numeros de los doctores que sean Cardiologos
+    * Haz una consulta con operadores de conjunto que muestre todos los codigos de los empleados que no son doctores
 
 * Subconsultas correlacionadas.
     * Muestra el Codigo, su funcion y su salario del empleado o empleados que mas cobren
