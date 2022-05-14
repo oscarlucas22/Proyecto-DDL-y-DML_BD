@@ -37,7 +37,7 @@
 --Haz una consulta que muestre el numero de la SS de los enfermos que esten en el hospital de la direccion Ciudad Universitaria
     select Numero_SS as 'Numero de la SS'
     from ENFERMO e, HOSPITAL h 
-    where e.Nombre_Hospital = h.Nombre_Hospital and Direccion = 'Ciudad Universitaria';
+    where e.Nombre_Hospital = h.Nombre_Hospital and h.Direccion = 'Ciudad Universitaria';
 
 --Haz una consulta que muestre el codigo y el turno de los empleados que sean doctores y tengan como especialidad pediatria
     select e.Codigo_Empleado as 'Codigo', Turno as 'Turno'
@@ -90,10 +90,10 @@
     having hb.Numero_Cama > 25;
 
 --Haz una consulta que muestre el año de la fecha de alta (solo el año) y el numero del doctor de los enfermos que ha antendido el doctor correspondiente al numero 607 
-    select Nombre as 'Nombre del enfermo', extract( year from Fecha_Alta) as 'Año que se dio de alta', d.Numero_Doctor as 'Numero del doctor'
+    select extract( year from Fecha_Alta) as 'Año que se dio de alta', d.Numero_Doctor as 'Numero del doctor'
     from ENFERMO e, DOCTOR d
     where d.Numero_Doctor = e.Numero_Doctor
-    group by Nombre, Fecha_Alta, d.Numero_Doctor
+    group by Fecha_Alta, d.Numero_Doctor
     having d.Numero_Doctor = 607;
 
 --9--
